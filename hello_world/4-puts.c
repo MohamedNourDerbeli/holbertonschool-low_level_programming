@@ -1,6 +1,7 @@
 #include <stdio.h>
 
 int main(void)
+//thes
 {
 /*
 *This program demonstrates the use of the puts function
