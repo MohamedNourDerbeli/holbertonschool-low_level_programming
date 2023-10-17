@@ -1,8 +1,9 @@
 #include "main.h"
 /**
- * times_table - Check description
- * Description: It prints 9 times table starting with 0
- * Return: Always 0.
+ * add - Check description
+ * @a: An integer a
+ * @b: An integer b
+ * Return: Result to add a and b.
  */
 
 int add(int a, int b)
