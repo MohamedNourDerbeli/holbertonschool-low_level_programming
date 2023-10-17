@@ -1,9 +1,12 @@
+/*
+ * File:add 0-putchar.c 
+ */
 #include <stdio.h>
 /**
- * _putchar - writes the character c to stdout
+ * main - Prints "Write a program that prints _putchar
+ *                , followed by a new line.
  *
- * Return: On success 1.
- * On error, -1 is returned, and errno is set appropriately.
+ * Return: Always 0.
  */
 int main(void)
 {
