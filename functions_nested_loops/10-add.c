@@ -7,6 +7,8 @@
 
 int add(int s, int l)
 {
-	s = s + l;
-	_putchar(s + '0');
+	int x;
+
+	x = s + l;
+	_putchar(x + '0');
 }
