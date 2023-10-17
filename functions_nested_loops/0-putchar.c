@@ -1,6 +1,3 @@
-/*
- * File:add 0-putchar.c 
- */
 #include <stdio.h>
 /**
  * main - Prints "Write a program that prints _putchar
