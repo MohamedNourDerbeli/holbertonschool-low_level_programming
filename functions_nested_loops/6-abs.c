@@ -7,9 +7,7 @@
 
 int _abs(int)
 {
-	int x;
-	int n;
-	x = _abs(n);
-	_putchar(x);
-	return ;
+	int t;
+	int abs(int t);
+	_putchar(t);
 }
