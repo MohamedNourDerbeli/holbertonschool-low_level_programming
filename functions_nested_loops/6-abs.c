@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * print_sign - check the code
+ * _abs - check the code
  *
  * Return: void (Success)
  */
@@ -11,4 +11,5 @@ int _abs(int)
 	int n;
 	x = _abs(n);
 	_putchar(x);
+	return ;
 }
