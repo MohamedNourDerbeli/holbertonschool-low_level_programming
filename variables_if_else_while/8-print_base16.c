@@ -24,5 +24,6 @@ int main(void)
 	{
 		putchar(t);
 	}
+	putchar('\n');
 	return (0);
 }

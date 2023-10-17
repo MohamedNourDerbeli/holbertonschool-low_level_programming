@@ -1,19 +1,23 @@
 #include <stdio.h>
+
 /**
- * main -  "program that prints the alphabet
- *              in lowercase, followed by a new line.
- *
- * Return: Always 0.
+ * main - main block
+ * Description: Print all possible combinations of single-digit numbers.
+ * Numbers must be separated by commas and a space.
+ * You can only use `putchar` to print to the console.
+ * You can only use `putchar` up to four times.
+ * You are not allowed to use any variable of type `char`.
+ * Return: 0
  */
 
-/* betty style doc for function main goes there */
 int main(void)
 {
-int i;
-for (i = 0; i < 10; i++)
-{
-printf("%d", i);
-}
-putchar('\n');
-return (0);
+	int x;
+
+	for (x = 48; x < 57; x++)
+	{
+		putchar(x);
+	}
+	putchar('\n');
+	return (0);
 }
