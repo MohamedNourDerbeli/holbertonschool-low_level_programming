@@ -7,6 +7,6 @@
 
 int add(int s, int l)
 {
-	_putchar((s + l) + '0');
+	printf(s + l);
 	return (0);
 }
