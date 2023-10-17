@@ -5,9 +5,10 @@
  * Return: void (Success)
  */
 
-int _abs(int)
+int _abs(int r )
 {
-	int t;
-	int abs(int t);
-	_putchar(t);
+	if (r >= 0)
+		return (r);
+	else
+		return (r * -1);
 }
