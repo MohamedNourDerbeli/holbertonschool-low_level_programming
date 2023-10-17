@@ -2,7 +2,7 @@
 /**
  * times_table - Check description
  * Description: It prints 9 times table starting with 0
- * Return: Nothing.
+ * Return: Always 0.
  */
 
 int add(int s, int l)
