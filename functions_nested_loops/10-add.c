@@ -5,12 +5,7 @@
  * Return: Always 0.
  */
 
-int add(int s, int l)
+int add(int a, int b)
 {
-	int x;
-
-	x = s + l;
-	_putchar((x / 10) + '0');
-
-	return (0);
+	return (a + b);
 }
