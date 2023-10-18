@@ -3,6 +3,7 @@
 /**
  * print_to_98 - Check description
  * Description: It prints 9 times table starting with 0
+ * @n : integer
  * Return: Nothing.
  */
 
