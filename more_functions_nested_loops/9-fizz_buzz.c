@@ -22,7 +22,10 @@ int main(void)
         {
             printf("Buzz");
         }
-        printf (i);
+        else
+        {
+            printf ("%d",i);
+        }
     }
     return (0);
 }
