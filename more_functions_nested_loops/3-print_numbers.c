@@ -3,7 +3,7 @@
 /**
  * print_numbers - Check description
  * Description: function that checks for uppercase character.
- * @x : int
+ *
  * Return: void (Success) .
  */
 
