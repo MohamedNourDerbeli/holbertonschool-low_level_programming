@@ -3,6 +3,7 @@
 /**
  * _isdigit - Check description
  * Description: function that checks for uppercase character.
+ * @i : integer
  * Return: void (Success) .
  */
 
