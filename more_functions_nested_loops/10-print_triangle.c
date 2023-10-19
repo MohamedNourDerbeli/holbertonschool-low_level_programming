@@ -29,9 +29,9 @@ void print_triangle(int size)
 				n--;
 				
 			}
-
+			putchar('\n');
 		}
-		putchar('\n');
+
 	}
 	else
 	{
