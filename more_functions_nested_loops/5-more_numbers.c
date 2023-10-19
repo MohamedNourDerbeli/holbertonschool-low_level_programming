@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include "main.h"
 /**
- * print_most_numbers - Check description
+ * more_numbers - Check description
  * Description: function that checks for uppercase character.
  *
  * Return: void (Success) .
@@ -9,16 +9,16 @@
 
 void more_numbers(void)
 {
-    int i ;
-    int x ;
+	int i;
+	int x;
 
-    for ( i = 0; i < 10; i++)
-    {
-        for (x = 0; x < 10; x++)
+	for (i = 0; i <= 10; i++)
 	{
-		_putchar(x + '0');
+		for (x = 0; x < 14; x++)
+		{
+			_putchar((i / 10) + '0');
+			_putchar((i % 10) + '0');
+		}
+		_putchar('\n');
 	}
-	_putchar('\n');
-    }
-    
 }
