@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include "main.h"
 /**
- * _isdigit - Check description
+ * print_numbers - Check description
  * Description: function that checks for uppercase character.
  * @i : integer
  * Return: void (Success) .
