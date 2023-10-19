@@ -16,8 +16,9 @@ void print_square(int size)
 		for (i = 0; i < size; i++)
 		{
 			printf("#");
-			_putchar('\n');
+			
 		}
+		_putchar('\n');
 	}
 	else
 	{
