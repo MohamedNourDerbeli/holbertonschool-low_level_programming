@@ -1,7 +1,7 @@
 #include "main.h"
 /**
- * print_line - Check description
- * Description: function that checks for uppercase character.
+ * print_diagonal - Check description
+ * Description: print_diagonal
  * @n : integer
  * Return: void (Success) .
  */
@@ -11,13 +11,20 @@ void print_diagonal(int n)
 	int i;
 	int j;
 
-	for (i = 0; i < n; i++)
+	if (n > 0)
 	{
-		for (j = 0; i > j; j++)
+		for (i = 0; i < n; i++)
 		{
-			_putchar(32);
+			for (j = 0; i > j; j++)
+			{
+				_putchar(32);
+			}
+			_putchar(92);
+			_putchar('\n');
 		}
-		_putchar(92);
+	}
+	else
+	{
 		_putchar('\n');
 	}
 }
