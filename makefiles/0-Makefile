@@ -1,3 +1,3 @@
 #!/bin/bash
 all:
-    make -f 0-Makefile | gcc main.c school.c -o school
+    make -f 0-Makefile gcc main.c school.c -o school
