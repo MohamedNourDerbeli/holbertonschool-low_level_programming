@@ -16,7 +16,7 @@ void print_triangle(int size)
 	{
 		for (i = 0; i < size; i++)
 		{
-			n = size - 1;
+			n = size - 1 - i;
 			for (j = 0; j < size; j++)
 			{
 				if (j <= n)
@@ -32,7 +32,6 @@ void print_triangle(int size)
 			}
 			putchar('\n');
 		}
-		n--;
 	}
 	else
 	{
