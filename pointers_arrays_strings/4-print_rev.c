@@ -1,8 +1,8 @@
 #include "main.h"
 
 /**
- * main - check the code
- *
+ * print_rev - check the code
+ * @s : char
  * Return: Always 0.
  */
 
