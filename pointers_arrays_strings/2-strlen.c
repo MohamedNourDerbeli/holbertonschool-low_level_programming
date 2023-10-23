@@ -1,7 +1,7 @@
 /**
  * _strlen - check the code
- *
- * Return: i.
+ * @s : char
+ * Return: Always 0.
  */
 
 int _strlen(char *s)
