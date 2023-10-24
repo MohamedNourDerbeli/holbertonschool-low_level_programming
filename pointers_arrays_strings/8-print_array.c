@@ -3,7 +3,7 @@
 /**
  * print_array - check the code for
  * @a :integer
- * @b :integer
+ * @n :integer
  * Return: Always 0.
  */
 
