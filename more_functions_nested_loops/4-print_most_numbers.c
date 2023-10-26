@@ -6,6 +6,7 @@
  *
  * Return: void (Success) .
  */
+
 void print_most_numbers(void)
 {
 	int x;
