@@ -24,6 +24,7 @@ int _atoi(char *s)
 			{
 				result = -2147483648;
 				return (result);
+				break;
 			}
 			else
 			{
