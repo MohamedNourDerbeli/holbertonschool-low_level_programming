@@ -11,12 +11,12 @@
 void print_array(int *a, int n)
 {
 	int rev, l;
-	
+
 	while (a[n])
 	{
 		rev[l] = a[n];
 		n--;
-		l++
+		l++;
 	}
 	rev = '\0';
 	return (rev)
