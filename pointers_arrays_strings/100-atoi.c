@@ -20,11 +20,10 @@ int _atoi(char *s)
 		}
 		if (s[i] >= '0' && s[i] <= '9')
 		{
-			if (sign == -1 && result *10 == 2147483640 && s[i] == '8')
+			if (sign == -1 && result * 10 == 2147483640 && s[i] == '8')
 			{
 				result = -2147483648;
 				return (result);
-				break;
 			}
 			else
 			{
