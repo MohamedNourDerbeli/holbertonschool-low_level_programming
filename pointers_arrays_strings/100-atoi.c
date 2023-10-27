@@ -21,18 +21,8 @@ int _atoi(char *s)
 		{
 			result = result * 10 + (s[i] - '0');
 		}
-		else
-		{
-			break;
-		}
 		i++;
 	}
 	result *= sign;
 	return (result);
-}
-int main(void)
-{
-	int value = _atoi("+++++----12345");
-	printf("Converted value: %d\n", value);
-	return (0);
 }
