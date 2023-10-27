@@ -20,8 +20,15 @@ int _atoi(char *s)
 		}
 		if (s[i] >= '0' && s[i] <= '9')
 		{
-			result = result * 10 + (s[i] - '0');
-			foundnum = 1;
+			if (sign = -1 && result == 2147483640 && s[i] == '8')
+			{
+				result = -2147483648;
+			}
+			else
+			{
+				result = result * 10 + (s[i] - '0');
+				foundnum = 1;
+			}
 		}
 
 		else if (foundnum)
