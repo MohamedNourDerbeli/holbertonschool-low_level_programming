@@ -20,16 +20,16 @@ int _atoi(char *s)
 		}
 		if (s[i] >= '0' && s[i] <= '9')
 		{
+			result *= sign;
 			result = result * 10 + (s[i] - '0');
 			foundnum = 1;
 		}
-		
+
 		else if (foundnum)
 		{
 			break;
 		}
 		i++;
 	}
-	result *= sign;
 	return (result);
 }
