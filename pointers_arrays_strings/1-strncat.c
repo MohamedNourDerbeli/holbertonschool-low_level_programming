@@ -5,6 +5,7 @@
  * _strncat - check the code
  * @src : char
  * @dest : char
+ * @n : integer
  * Return: dest.
  */
 
