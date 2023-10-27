@@ -9,7 +9,7 @@ int _atoi(char *s)
 {
 	int i = 0;
 	int sign = 1;
-	long result = 0;
+	int result = 0;
 	int foundnum = 0;
 
 	while (s[i] != '\0')
@@ -20,7 +20,7 @@ int _atoi(char *s)
 		}
 		if (s[i] >= '0' && s[i] <= '9')
 		{
-			if (sign == -1 && result == 2147483640 && s[i] == '8')
+			if (sign == -1 && result *10 == 2147483640 && s[i] == '8')
 			{
 				result = -2147483648;
 				return (result);
