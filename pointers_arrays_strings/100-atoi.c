@@ -22,7 +22,7 @@ int _atoi(char *s)
 		{
 			if (result == 2147483640 && s[i] == '8' && sign == -1)
 			{
-				result = -2147483648
+				result = -2147483648;
 			}
 			else
 			{
