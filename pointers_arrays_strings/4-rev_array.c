@@ -10,14 +10,12 @@
  */
 void print_array(int *a, int n)
 {
-	int rev, l;
+	int i, j, t;
 
-	while (a[n])
+	for (i = 0; j = (n - 1); i < j; i++, j--)
 	{
-		rev[l] = a[n];
-		n--;
-		l++;
+		t = a[i];
+		a[i] = a[j];
+		a[j] = t;
 	}
-	rev = '\0';
-	return (rev)
 }
