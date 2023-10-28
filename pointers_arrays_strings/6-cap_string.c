@@ -5,7 +5,7 @@
  * isLower - check the code
  *
  * @c :char
- * 
+ *
  * Return: 1 if true, 0 if false
  */
 
