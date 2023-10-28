@@ -3,7 +3,7 @@
 
 /**
  * string_toupper - check the code
- *@* =char
+ *@*str =char
  * Return: Always 0.
  */
 
