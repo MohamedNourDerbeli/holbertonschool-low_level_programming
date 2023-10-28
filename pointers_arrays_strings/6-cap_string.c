@@ -3,7 +3,7 @@
 
 /**
  * isLower - check the code
- * 
+ *
  * @c =char
  * Return: Always 0.
  */
@@ -16,7 +16,7 @@ int isLower(char c)
 /**
  * isDelimiter - check the code
  * @c =char
- * 
+ *
  * Return: Always 0.
  */
 
@@ -35,7 +35,7 @@ int isDelimiter(char c)
 
 /**
  * cap_string - check the code
- *@*s =char
+ *@s =char
  * Return: Always 0.
  */
 
