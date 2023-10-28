@@ -4,7 +4,7 @@
 /**
  * isLower - check the code
  *
- * @c =char
+ * @c :char
  * 
  * Return: 1 if true, 0 if false
  */
@@ -16,7 +16,7 @@ int isLower(char c)
 
 /**
  * isDelimiter - check the code
- * @c =char
+ * @c :char
  *
  * Return: 1 if true, 0 if false
  */
@@ -36,7 +36,7 @@ int isDelimiter(char c)
 
 /**
  * cap_string - check the code
- * @s = input string
+ * @s : input string
  * Return: Always 0.
  */
 
