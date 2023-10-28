@@ -7,22 +7,18 @@
  * @c =char
  * Return: Always 0.
  */
-/**
- * cap_string - check the code
- *@s =char
- * Return: Always 0.
- */
+
+int isLower(char c)
+{
+	return (c >= 97 && c <= 122);
+}
+
 /**
  * isDelimiter - check the code
  * @c =char
  *
  * Return: Always 0.
  */
-
-int isLower(char c)
-{
-	return (c >= 97 && c <= 122);
-}
 
 int isDelimiter(char c)
 {
@@ -36,6 +32,12 @@ int isDelimiter(char c)
 	}
 	return (0);
 }
+
+/**
+ * cap_string - check the code
+ *@*s =char
+ * Return: Always 0.
+ */
 
 char *cap_string(char *s)
 {
