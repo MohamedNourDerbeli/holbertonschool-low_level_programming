@@ -7,17 +7,17 @@
  * Return: Always 0.
  */
 
-char *string_toupper(char *)
+char *string_toupper(char *str)
 {
 	int i = 0;
 
-	while (*[i] != '\0')
+	while (*str[i] != '\0')
 	{
-		if (* >= 97 && * <= 122)
+		if (*str >= 97 && *str <= 122)
 		{
-			*[i] = *[i] - 32;
+			*str[i] = *str[i] - 32;
 		}
 		i++;
 	}
-	return (*)
+	return (*str)
 }
