@@ -13,7 +13,7 @@ char *cap_string(char *str)
 
 	while (str[i] != '\0')
 	{
-		if (str[i] >= 97 && str[i] <= 122 && str[i] -1 == '32')
+		if (str[i] >= 97 && str[i] <= 122 && str[i] -1 == ' ')
 		{
 			str[i] = str[i] - 32;
 		}
