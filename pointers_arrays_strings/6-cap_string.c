@@ -3,10 +3,11 @@
 
 /**
  * cap_string - check the code
- *@*str =char
+ *@*s =char
  * Return: Always 0.
  */
-int islower(char c)
+
+int isLower(char c)
 {
 	return (c >= 97 && c <= 122);
 }
@@ -20,9 +21,9 @@ int isDelimiter(char c)
 		if (c == delimiter[i])
 			return (1);
 	}
-	return (0)
+	return (0);
 }
-char *cap_string(char *str)
+char *cap_string(char *s)
 {
 	char *ptr = s;
 	int foundDelimit = 1;
@@ -33,7 +34,7 @@ char *cap_string(char *str)
 		{
 			foundDelimit = 1;
 		}
-		else if (islower(*s) && foundDelimit(*s))
+		else if (isLower(*s) && foundDelimit(*s))
 		{
 			*s -= 32;
 			foundDelimit = 0;
@@ -44,5 +45,5 @@ char *cap_string(char *str)
 		}
 		s++;
 	}
-	return (ptr)
+	return (ptr);
 }
