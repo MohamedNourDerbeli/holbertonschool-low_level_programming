@@ -34,7 +34,7 @@ char *cap_string(char *s)
 		{
 			foundDelimit = 1;
 		}
-		else if (isLower(*s) && foundDelimit(*s))
+		else if (isLower(*s) && foundDelimit)
 		{
 			*s -= 32;
 			foundDelimit = 0;
