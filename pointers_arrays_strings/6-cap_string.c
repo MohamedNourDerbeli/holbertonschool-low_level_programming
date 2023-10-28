@@ -2,9 +2,9 @@
 #include <stdio.h>
 
 /**
- * cap_string - check the code
- *@*s =char
- *@c =char
+ * isLower - check the code
+ * 
+ * @c =char
  * Return: Always 0.
  */
 
@@ -15,7 +15,8 @@ int isLower(char c)
 
 /**
  * isDelimiter - check the code
- *@c =char
+ * @c =char
+ * 
  * Return: Always 0.
  */
 
@@ -31,6 +32,12 @@ int isDelimiter(char c)
 	}
 	return (0);
 }
+
+/**
+ * cap_string - check the code
+ *@*s =char
+ * Return: Always 0.
+ */
 
 char *cap_string(char *s)
 {
