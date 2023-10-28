@@ -2,8 +2,9 @@
 #include <stdio.h>
 
 /**
- * isLower - check the code
- * @c =char
+ * cap_string - check the code
+ *@*s =char
+ *@c =char
  * Return: Always 0.
  */
 
@@ -30,11 +31,7 @@ int isDelimiter(char c)
 	}
 	return (0);
 }
-/**
- * cap_string - check the code
- *@*s =char
- * Return: Always 0.
- */
+
 char *cap_string(char *s)
 {
 	char *ptr = s;
