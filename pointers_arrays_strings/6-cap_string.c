@@ -6,18 +6,43 @@
  *@*str =char
  * Return: Always 0.
  */
+int islower(char c)
+{
+	return (c >= 97 && c <= 122);
+}
 
+int isDelimiter(char c)
+{
+	int i;
+	char delimiter[] = " \n\t,.!?\"(){}";
+	for (i = 0; i < 12; i++)
+	{
+		if (c == delimiter[i])
+			return (1);
+	}
+	return (0)
+}
 char *cap_string(char *str)
 {
-	int i = 0;
+	char *ptr = s;
+	int foundDelimit = 1;
 
-	while (str[i] != '\0')
+	while (*s)
 	{
-		if (str[i] >= 97 && str[i] <= 122 && str[i] -1 == ' ')
+		if (isDelimiter(*s))
 		{
-			str[i] = str[i] - 32;
+			foundDelimit = 1;
 		}
-		i++;
+		else if (islower(*s) && foundDelimit(*s))
+		{
+			*s -= 32;
+			foundDelimit = 0;
+		}
+		else
+		{
+			foundDelimit = 0;
+		}
+		s++;
 	}
-	return (str);
+	return (ptr)
 }
