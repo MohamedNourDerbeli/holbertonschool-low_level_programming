@@ -18,5 +18,5 @@ void print_diagsums(int *a, int size)
 	}
 
 	printf("%ld, ", diag1_sum);
-	printf("%ld", diag2_sum);
+	printf("%ld ", diag2_sum);
 }
