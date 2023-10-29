@@ -2,19 +2,21 @@
 #include <stdio.h>
 
 /**
- * print_chessboard - prints the chessboard
- * @a: 2D array representing the chessboard
+ * print_diagsums - prints the sum of the two diagonals of a square matrix
+ * @a: Pointer to the square matrix
+ * @size: Size of the matrix
  */
-void print_chessboard(char (*a)[8])
+void print_diagsums(int *a, int size)
 {
-	int row, col;
+	int i;
+	long int diag1_sum = 0, diag2_sum = 0;
 
-	for (row = 0; row < 8; row++)
+	for (i = 0; i < size; i++)
 	{
-		for (col = 0; col < 8; col++)
-		{
-			putchar(a[row][col]);
-		}
-		putchar('\n');
+		diag1_sum += a[i * size + i];
+		diag2_sum += a[i * size + (size - 1 - i)];
 	}
+
+	printf("Sum of the primary diagonal: %ld\n", diag1_sum);
+	printf("Sum of the secondary diagonal: %ld\n", diag2_sum);
 }
