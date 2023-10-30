@@ -1,6 +1,6 @@
 #include "main.h"
 #include <stdio.h>
-#include <string.h>
+
 /**
  * _strchr - check the code
  * @s : char
@@ -10,19 +10,18 @@
 
 char *_strchr(char *s, char c)
 {
-	int l, i = 0;
-
-	l = strlen(s);
-	while (i < l + 1)
+	while (*s != '\0')
 	{
-		if (s[i] == c)
+		if (*s == c)
 		{
-			s = s + i;
-			break;
+			return (s);
 		}
-		i++;
+		s++;
 	}
-	if (*s != c)
-		return (NULL);
-	return (s);
+	if (*s == c)
+	{
+		return (s);
+	}
+
+	return (NULL);
 }
