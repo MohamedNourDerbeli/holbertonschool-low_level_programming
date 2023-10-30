@@ -10,17 +10,19 @@
 
 char *_strchr(char *s, char c)
 {
-	while (*s != '\0')
+	int l, i = 0;
+
+	l = strlen(s);
+	while (i < l + 1)
 	{
-		if (*s == c)
+		if (s[i] == c)
 		{
-			return (s);
+			s = s + i;
+			break;
 		}
-		s++;
-		if (*s == '\0')
-		{
-			return (NULL);
-		}
-		}
-	return (NULL);
+		i++;
+	}
+	if (*s != c)
+		return (NULL);
+	return (s);
 }
