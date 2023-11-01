@@ -3,7 +3,7 @@
 /**
  * _puts_recursion - Check description
  * Description: function that checks for uppercase character.
- *
+ * @s: char
  * Return: void (Success) .
  */
 
