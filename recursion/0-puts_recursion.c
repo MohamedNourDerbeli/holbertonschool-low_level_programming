@@ -10,9 +10,9 @@ void _puts_recursion(char *s)
 {
 	int i;
 
-	if (s[i] == '\0')
+	if (s.next == '\0')
 	{
-		return (1);
+		return (s);
 	}
-	return 1 + _puts_recursion(s[i]);
+	return 1 + _puts_recursion(s.next);
 }
