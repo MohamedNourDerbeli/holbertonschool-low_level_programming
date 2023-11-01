@@ -7,10 +7,7 @@
  */
 void _puts_recursion(char *s)
 {
-	int i = 0;
-
-	while (s[i] != '\0')
-	{
-		return _puts_recursion(s[i] + 1);
-	}
+	len =_strlen_recursion(s)
+		return _puts_recursion(s[len] + 1);
+	
 }
