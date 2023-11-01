@@ -11,7 +11,7 @@ void _puts_recursion(char *s)
 
     while (s[i] != '\0')
     {
-        return _puts_recursion(s[i] +1);
+        return _puts_recursion(*s[i] +1);
     }
     
 }
