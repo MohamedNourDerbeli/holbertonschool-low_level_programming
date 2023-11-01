@@ -3,15 +3,16 @@
 
 /**
  * _strlen_recursion - check the code
- * @s :char 
+ * @s :char
  * Return: Always 0.
  */
 
 int _strlen_recursion(char *s)
 {
-    if (*s =='\0')
-    {
-        return;
-    }
-    
+	if (*s == '\0')
+	{
+		putchar(s);
+		return;
+	}
+	_puts_recursion(s + 1);
 }
