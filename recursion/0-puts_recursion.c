@@ -6,12 +6,11 @@
  *
  * Return: void (Success) .
  */
-void _puts_recursion(char *s[0])
+void _puts_recursion(char *s)
 {
-	if (s[0])
+	if (s =='\0')
 	{
-		return _puts_recursion(s+ 1);
+		return(1);
 	}
-	
-	return (s)
+	return 1+ _puts_recursion(*s);
 }
