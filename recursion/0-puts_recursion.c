@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdio.h>
 /**
  * _puts_recursion - Check description
  * Description: function that checks for uppercase character.
@@ -7,6 +8,6 @@
  */
 void _puts_recursion(char *s)
 {
-	len = strlen(s);
-	return _puts_recursion(s[len] + 1);
+	putchar(*s);
+	return _puts_recursion(*s + 1);
 }
