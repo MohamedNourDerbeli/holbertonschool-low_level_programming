@@ -11,7 +11,7 @@ int main(int argc, __attribute__((unused)) char *argv[])
 
 	for (count = 0; count < argc; count++)
 	{
-		if (count =argc)
+		if (count ==argc)
 		{
 			printf("%d", count);
 		}
