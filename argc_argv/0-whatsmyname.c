@@ -1,7 +1,8 @@
 #include <stdio.h>
 /**
- *_isalpha - Entry point
- *@argc: integer
+ * main - Entry point
+ * @argc: integer
+ * @argv: char
  * Return: void (Success)
  */
 int main(int argc, char *argv[])
