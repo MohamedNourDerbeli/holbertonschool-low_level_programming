@@ -6,11 +6,11 @@
  * @argv: char
  * Return: void (Success)
  */
-int main(__attribute__((unused)) int argc, char *argv[])
+int main(int argc, char *argv[])
 {
 	if (argc < 2)
 	{
-		return;
+		return(0);
 	}
 	else
 	{
