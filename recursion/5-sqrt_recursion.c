@@ -2,23 +2,12 @@
 #include <stdio.h>
 
 /**
- * _sqrt_recursion - check the code
+ * sqrt2 - check the code
  * @n :integer
  * Return: Always 0.
  */
-int fins_sqrt(int n)
-{
-	if (n < 0)
-	{
-		return (-1);
-	}
-	else if (n == 0 || n == 1)
-	{
-		return (n);
-	}
-	return _sqrt_recursion(n, 1);
-}
-int _sqrt_recursion(int n, int guess)
+
+int sqrt2(int n, int guess)
 {
 	if (guess * guess == n)
 	{
@@ -30,6 +19,10 @@ int _sqrt_recursion(int n, int guess)
 	}
 	else
 	{
-		return _sqrt_recursion(n, guess + 1);
+		return sqrt2(n, guess + 1);
 	}
+}
+int _sqrt_recursion(int n)
+{
+	return (sqrt2(n, 1));
 }
