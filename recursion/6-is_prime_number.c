@@ -2,9 +2,8 @@
 #include <stdio.h>
 
 /**
- * sqrt2 - check the code
+ * is_prime_number - check the code
  * @n :integer
- * @guess : interger
  * Return: Always 0.
  */
 
