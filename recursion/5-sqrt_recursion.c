@@ -16,5 +16,20 @@ int _sqrt_recursion(int n)
 	{
 		return (n);
 	}
-	return _sqrt_recursion(n);
+	return find_sqrt(n, 1);
+}
+int find_sqrt(int n, int guess)
+{
+	if (guess * guess == n)
+	{
+		return (guess);
+	}
+	else if (guess * guess > n)
+	{
+		return (-1);
+	}
+	else
+	{
+		return find_sqrt(n, guess + 1);
+	}
 }
