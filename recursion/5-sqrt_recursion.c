@@ -20,9 +20,8 @@ int sqrt2(int n, int guess)
 	}
 	else
 	{
-		return sqrt2(n, guess + 1);
+		return (sqrt2(n, guess + 1));
 	}
-	return(0);
 }
 
 /**
