@@ -6,7 +6,7 @@
  * @n :integer
  * Return: Always 0.
  */
-int _sqrt_recursion(int n)
+int fins_sqrt(int n)
 {
 	if (n < 0)
 	{
@@ -16,9 +16,9 @@ int _sqrt_recursion(int n)
 	{
 		return (n);
 	}
-	return find_sqrt(n, 1);
+	return _sqrt_recursion(n, 1);
 }
-int find_sqrt(int n, int guess)
+int _sqrt_recursion(int n, int guess)
 {
 	if (guess * guess == n)
 	{
@@ -30,6 +30,6 @@ int find_sqrt(int n, int guess)
 	}
 	else
 	{
-		return find_sqrt(n, guess + 1);
+		return _sqrt_recursion(n, guess + 1);
 	}
 }
