@@ -7,14 +7,11 @@
  */
 int main(int argc, __attribute__((unused)) char *argv[])
 {
-	int i;
-	for (i = 0; i < argc; i++)
-	{
-		if (i == argc)
-		{
-			printf("%d\n", i);
-		}
-	}
+	int count ;
 
+	for (count = 0; count < argc; count++)
+	{
+	  printf("%d", count);
+	}
 	return (0);
 }
