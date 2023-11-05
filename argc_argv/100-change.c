@@ -18,11 +18,12 @@ int main(int argc, char *argv[])
 	if (atoi(argv[1]) < 0)
 	{
 		printf("0\n");
+		return;
 	}
 	
 	if (atoi(argv[1]) % 25 ==0 )
 	{
-		printf("%d",atoi(argv[1]) / 25 );
+		printf("%d\n",atoi(argv[1]) / 25 );
 	}
 	else if (atoi(argv[1]) % 10 ==0 )
 	{
