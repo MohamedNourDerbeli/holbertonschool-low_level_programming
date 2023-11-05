@@ -7,12 +7,11 @@
  * @c : char
  * Return: void (Success)
  */
-char *create_array(unsigned int size, char c)
+char *create_array(unsigned int size, char *c)
 {
 	unsigned int i = 0;
-	char *cs;
 
-	cs = malloc(sizeof(c) * size);
+	c = malloc(sizeof(c) * size);
 
 	if (size == 0)
 	{
@@ -21,9 +20,9 @@ char *create_array(unsigned int size, char c)
 
 	while (i < size)
 	{
-		cs[i] = c;
+		c[i] = c;
 		i++;
 	}
-	free(cs);
-	return (cs);
+	return (c);
+	free(c);
 }
