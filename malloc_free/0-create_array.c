@@ -10,9 +10,9 @@
 char *create_array(unsigned int size, char c)
 {
 	unsigned int i = 0;
-	int *cs;
+	char *cs;
 
-	cs = malloc(sizeof(c) * size);
+	cs = malloc(sizeof(char) * size);
 
 	if (size == 0)
 	{
@@ -25,6 +25,6 @@ char *create_array(unsigned int size, char c)
 		i++;
 	}
 
-	printf("%ls\n", cs);
+	printf("%s\n", cs);
 	return (0);
 }
