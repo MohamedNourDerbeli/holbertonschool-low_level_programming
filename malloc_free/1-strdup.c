@@ -15,8 +15,7 @@ char *_strdup(char *str)
 	}
 	while (str[i] != '\0')
 	{
-		printf("%d",str[i]);
-		str = malloc(sizeof(str[i]));
+		str += malloc(sizeof(str[i]));
 		i++;
 	}
 
