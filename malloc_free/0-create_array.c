@@ -9,12 +9,12 @@
  */
 char *create_array(unsigned int size, char c)
 {
-	int i = 0;
+	unsigned int i = 0;
 	int *cs;
-	
+
 	cs = malloc(sizeof(c) * size);
 
-	if (size == NULL)
+	if (size == 0)
 	{
 		return (0);
 	}
@@ -25,6 +25,6 @@ char *create_array(unsigned int size, char c)
 		i++;
 	}
 
-	printf("%s\n", cs);
+	printf("%ls\n", cs);
 	return (0);
 }
