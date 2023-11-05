@@ -12,9 +12,9 @@ char *create_array(unsigned int size, char c)
 	unsigned int i = 0;
 	char *cs;
 
-	cs = malloc(sizeof(c) * size);
+	cs = malloc(sizeof(char) * size);
 
-	if (size == 0)
+	if (cs == NULL)
 	{
 		return (0);
 	}
@@ -25,5 +25,4 @@ char *create_array(unsigned int size, char c)
 		i++;
 	}
 	return (cs);
-	free(cs);
 }
