@@ -17,7 +17,7 @@ int main(int argc, char *argv[])
 	int i = 0;
 	int cents = atoi(argv[1]);
 
-	if (argc != 2 || argc < 2)
+	if (argc > 2 || argc < 2)
 	{
 		printf("Error\n");
 		return (1);
@@ -32,9 +32,11 @@ int main(int argc, char *argv[])
 	while (cents > 0 && i < numCoins)
 	{
 		int currentCoin = coins[i];
+
 		if (cents >= currentCoin)
 		{
 			int numUsed = cents / currentCoin;
+
 			coinCount += numUsed;
 			cents -= numUsed * currentCoin;
 		}
