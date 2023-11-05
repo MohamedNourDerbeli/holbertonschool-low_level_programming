@@ -20,4 +20,5 @@ char *_strdup(char *str)
 	str = malloc(sizeof(char) * i);
 
 	printf("%s",str);
+	return(0);
 }
