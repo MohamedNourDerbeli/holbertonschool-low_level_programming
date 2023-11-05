@@ -24,7 +24,5 @@ char *create_array(unsigned int size, char c)
 		cs[i] = c;
 		i++;
 	}
-
-	printf("%s\n", cs);
-	return (0);
+	return (cs);
 }
