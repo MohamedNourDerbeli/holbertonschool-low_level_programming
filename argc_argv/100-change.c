@@ -10,36 +10,36 @@
  */
 int main(int argc, char *argv[])
 {
-	if (argc > 2 || argc == 1 )
+	int coins[] = {25, 10, 5, 2, 1};
+	 int cents = atoi(argv[1]);
+
+	if (argc > 2 || argc == 1)
 	{
 		printf("Error\n");
 		return (1);
 	}
-	if (atoi(argv[1]) < 0)
+	if (cents < 0)
 	{
 		printf("0\n");
-		return(0);
+		return (0);
 	}
-	
-	if (atoi(argv[1]) % 25 ==0 )
-	{
-		printf("%d\n",atoi(argv[1]) / 25 );
-	}
-	else if (atoi(argv[1]) % 10 ==0 )
-	{
-		printf("%d\n",atoi(argv[1]) / 10 );
-	}
-	else if (atoi(argv[1]) % 5 ==0 )
-	{
-		printf("%d\n",atoi(argv[1]) / 5 );
-	}
-	else if (atoi(argv[1]) % 2 ==0 )
-	{
-		printf("%d\n",atoi(argv[1]) / 2 );
-	}
-	else if (atoi(argv[1]) % 1 ==0 )
-	{
-		printf("%d\n",atoi(argv[1]) / 1 );
-	}
-	return(0);
+
+    int numCoins = sizeof(coins) / sizeof(coins[0]);
+
+    int coinCount = 0;
+    int i = 0;
+
+    while (cents > 0 && i < numCoins) {
+        int currentCoin = coins[i];
+        if (cents >= currentCoin) {
+            int numUsed = cents / currentCoin;
+            coinCount += numUsed;
+            cents -= numUsed * currentCoin;
+        }
+        i++;
+    }
+
+    printf("%d\n", coinCount);
+
+    return 0;
 }
