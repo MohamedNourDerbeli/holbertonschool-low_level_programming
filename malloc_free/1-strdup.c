@@ -19,5 +19,5 @@ char *_strdup(char *str)
 	}
 	str = malloc(sizeof(char) * i);
 
-	return (str);
+	printf("%s",str);
 }
