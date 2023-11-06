@@ -30,7 +30,6 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	len2 = strlen(s2);
 	if (n >= len2)
 	{
-
 		con = malloc(len + len2 + 1);
 		temp = s2;
 	}
@@ -38,6 +37,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	{
 		con = malloc(len + n + 1);
 		strncpy(temp, s2, n);
+		printf("%s", temp);
 	}
 
 	if (con == NULL)
@@ -45,7 +45,6 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		return (NULL);
 	}
 
-	printf("%s", temp);
 	strcpy(con, s1);
 	strcat(con, temp);
 	strcat(con, "\0");
