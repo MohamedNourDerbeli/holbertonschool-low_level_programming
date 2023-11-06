@@ -11,22 +11,14 @@
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
 	int *allc;
-	unsigned int i;
 	if (nmemb == 0 || size == 0)
 	{
 		return (NULL);
 	}
-	allc = malloc(nmemb * size);
+	allc = (int *)calloc(nmemb, sizeof(int));
 	if (allc == NULL)
 	{
 		return (NULL);
 	}
-	i = 0;
-	while (i < nmemb * size)
-	{
-		allc[i] = 0;
-		i++;
-	}
-
 	return (allc);
 }
