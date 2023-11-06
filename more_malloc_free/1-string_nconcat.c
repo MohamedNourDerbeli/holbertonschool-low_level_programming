@@ -13,7 +13,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
 	unsigned len;
 	unsigned len2;
-	char *temp = "";
+	char *temp[] = "";
 	char *con;
 
 	if (s1 == NULL)
@@ -31,7 +31,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	if (n >= len2)
 	{
 		con = malloc(len + len2 + 1);
-		temp = s2;
+		temp[len2] = s2;
 	}
 	else
 	{
