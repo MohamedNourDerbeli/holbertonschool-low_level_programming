@@ -18,6 +18,6 @@ int **alloc_grid(int width, int height)
 		mall[i] = 0;
 		i++;
 	}
-	printf("%d",mall);
+	printf("%d",atoi(mall));
 	return (0);
 }
