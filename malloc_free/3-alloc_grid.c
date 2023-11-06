@@ -17,12 +17,13 @@ int **alloc_grid(int width, int height)
 		int h = 0;
 		while (h < width)
 		{
-			printf("%d", grid[i]);
+			printf("%d", grid);
 			h++;
 		}
+
 		printf("\n");
 		i++;
 	}
-
+	printf("%d",grid);
 	return (grid);
 }
