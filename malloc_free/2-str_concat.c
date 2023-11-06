@@ -14,18 +14,20 @@ char *str_concat(char *s1, char *s2)
 	int len = (s1 != NULL) ? strlen(s1):0;
 	int len2 = (s1 != NULL) ? strlen(s2):0;
 	char *con = malloc(len + len2 + 1);
-
+	printf("%d",con);
 	if (con == NULL)
 	{
 		return(NULL);
 	}
-	for ( i = 0; con[i]!= '\0'; i++)
-	{
-		printf("%d",con[i]);
-	}
+	if (s1 != NULL && s2 == NULL) {
+        strcpy(con, s1);
+    }
+
+    if (s2 != NULL && s1 == NULL) {
+        strcat(con, s2);
+    }
 	
-	
-	return(NULL);
+	return(con);
 	
 	
 }
