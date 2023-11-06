@@ -4,8 +4,8 @@
 #include "main.h"
 /**
  * alloc_grid - Entry point
- * @s1 : char
- * @s2 : char
+ * @width : int
+ * @height : int
  * Return: void (Success)
  */
 int **alloc_grid(int width, int height)
@@ -17,15 +17,15 @@ int **alloc_grid(int width, int height)
 	{
 		return (NULL);
 	}
-	array = malloc(width * sizeof(int *));
+	array = malloc(height * sizeof(int *));
 	if (array == NULL)
 	{
 		return (NULL);
 	}
 
-	for (i = 0; i < height; i++)
+	for (i = 0; i < width; i++)
 	{
-		array[i] = malloc(width * sizeof(int *));
+		array[i] = malloc(height * sizeof(int *));
 	}
 
 	return (array);
