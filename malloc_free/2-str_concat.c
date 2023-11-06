@@ -10,23 +10,21 @@
  */
 char *str_concat(char *s1, char *s2)
 {
-	int len = (s1 != NULL) ? strlen(s1) : 0;
-	int len2 = (s1 != NULL) ? strlen(s2) : 0;
-	char *con = malloc(len + len2 + 1);
-
-	if (con == NULL)
+	if (s1 == NULL)
 	{
-		return (NULL);
-	}
-	if (s1 != NULL)
-	{
-		strcpy(con, s1);
+		s1 = "";
 	}
 
 	if (s2 != NULL)
 	{
-		strcat(con, s2);
+		s2 = "";
 	}
-	return(con);
-	free(con);
+
+	int len = strlen(s1);
+	int len2 = strlen(s2);
+	char *con = malloc(len + len2 + 1);
+
+	strcpy(con, s1);
+	strcat(con, s2);
+	return (con);
 }
