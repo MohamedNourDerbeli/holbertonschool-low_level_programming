@@ -3,10 +3,10 @@
 #include <string.h>
 #include "main.h"
 /**
- * _calloc - Entry point
- * @nmemb : char
- * @size : char
- * Return: void (Success)
+ * array_range - Entry point
+ * @min : int
+ * @max : int
+ * Return: int (Success)
  */
 int *array_range(int min, int max)
 {
@@ -17,7 +17,7 @@ int *array_range(int min, int max)
 	{
 		return (NULL);
 	}
-	array = malloc(sizeof(int) * (max - min));
+	array = malloc(sizeof(int) * (max - min)+1);
 	if (array == NULL)
 	{
 		return (NULL);
