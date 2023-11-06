@@ -27,7 +27,6 @@ char *str_concat(char *s1, char *s2)
 	{
 		strcat(con, s2);
 	}
-	printf ("%s",con);
+	return(con);
 	free(con);
-	return(0);
 }
