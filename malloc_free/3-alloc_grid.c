@@ -13,30 +13,23 @@ int **alloc_grid(int width, __attribute__((unused)) int height)
 	int w;
 	int h;
 	typedef int *intpointer;
-	intpointer *grid = malloc((width* height) * sizeof(int));
+	intpointer *grid = malloc((width * height) * sizeof(int));
 	if (grid == NULL)
 	{
 		return (NULL);
 	}
-	if (grid[0] <= '0')
-	{
-		return (NULL);
-	}
-	else
-	{
 
-		h = 0;
-		while (h < height)
+	h = 0;
+	while (h < height)
+	{
+		w = 0;
+		while (w < width)
 		{
-			w = 0;
-			while (w < width)
-			{
-				printf("%d ", grid[h][w]);
-				w++;
-			}
-			printf("\n");
-			h++;
+			printf("%d ", grid[h][w]);
+			w++;
 		}
+		printf("\n");
+		h++;
 	}
 
 	return (grid);
