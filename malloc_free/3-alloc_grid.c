@@ -10,7 +10,16 @@
  */
 int **alloc_grid(int width, int height)
 {
-	typedef char *charpointer;
-	charpointer *grid = malloc(width * sizeof(charpointer));
+	typedef int *intpointer;
+	intpointer *grid = malloc(width * sizeof(intpointer));
+	if (grid == NULL)
+	{
+		return(NULL);
+	}
+	if (grid <= '0')
+	{
+		return(NULL);
+	}
+	
 	return(grid);
 }
