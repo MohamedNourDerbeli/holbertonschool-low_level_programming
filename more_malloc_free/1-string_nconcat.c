@@ -36,7 +36,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	else
 	{
 		con = malloc(len + n + 1);
-		strncpy(temp, s2, n);
+		strncat(temp, s2, n);
 		printf("%s", temp);
 	}
 
