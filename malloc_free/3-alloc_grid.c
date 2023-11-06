@@ -12,17 +12,19 @@ int **alloc_grid(int width, int height)
 {
 	int i = 0 ;
 	int h= 0;
-	int grid = malloc(sizeof(int)*(width*height));
+	int *grid = malloc(sizeof(int)*(width*height));
 	while (i<width)
 	{
 		while (h<width)
 		{
-			/* code */
+			printf("%d",grid);
+			h++;
 		}
-		printf('\n');
+		printf("\n");
+		i++;
 	}
 	
-	if (width =="0" || height =="0")
+	if (width <= 0 || height <= 0)
 	{
 		return (1);
 	}
