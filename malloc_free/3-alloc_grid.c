@@ -8,16 +8,16 @@
  * @s2 : char
  * Return: void (Success)
  */
-int **alloc_grid(int width, int height)
+int **alloc_grid( __attribute__((unused)) int width, __attribute__((unused)) int height)
 {
-	int **array= malloc(sizeof(int)*width);
+	int **array= malloc(sizeof(int)*3);
 	int i =0;
 	while (i<height)
 	{
-		array[i]=malloc(sizeof(int)*height);
+		array[i]=malloc(sizeof(int)*3);
 		i++;
 	}
-	printf("%d",array[width][height]);
+	printf("%d",array[2][3]);
 	return(0);
 	
 }
