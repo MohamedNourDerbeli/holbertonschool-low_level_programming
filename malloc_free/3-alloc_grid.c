@@ -13,12 +13,12 @@ int **alloc_grid(int width, __attribute__((unused)) int height)
 	int w;
 	int h;
 	typedef int *intpointer;
-	intpointer *grid = malloc((width* height) * sizeof(intpointer));
+	intpointer *grid = malloc((width* height) * sizeof(int));
 	if (grid == NULL)
 	{
 		return (NULL);
 	}
-	if (grid[0][0] <= '0')
+	if (grid[0] <= '0')
 	{
 		return (NULL);
 	}
