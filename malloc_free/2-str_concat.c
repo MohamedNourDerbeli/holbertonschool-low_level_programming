@@ -24,8 +24,8 @@ char *str_concat(char *s1, char *s2)
 		s2 = "";
 	}
 
-	len = (s1 != '\0') ? strlen(s1) : 0;
-	len2 = (s1 != '\0') ? strlen(s2) : 0;
+	len = strlen(s1);
+	len2 = strlen(s2);
 	con = malloc(len + len2 + 1);
 
 	strcpy(con, s1);
