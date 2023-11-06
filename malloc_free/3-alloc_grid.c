@@ -24,10 +24,5 @@ int **alloc_grid(int width, int height)
 		i++;
 	}
 
-	if (width <= '0' || height <= '0')
-	{
-		return (1);
-	}
-
 	return (grid);
 }
