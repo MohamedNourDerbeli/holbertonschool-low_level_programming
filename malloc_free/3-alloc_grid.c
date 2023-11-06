@@ -10,14 +10,13 @@
  */
 int **alloc_grid(int width, int height)
 {
-	int i = 0;
-	 __attribute__((unused)) int o = 0;
-	int *mall = malloc((width * height) * sizeof(int));
-	while (i < width)
+	int **array= malloc(sizeof(int)*width);
+	int i =0;
+	while (i<height)
 	{
-		mall[i] = 0;
-		atoi(mall[i]);
-		i++;
+		array[i]=malloc(sizeof(int)*height);
 	}
-	return (mall);
+	printf("%d",array);
+	return(0);
+	
 }
