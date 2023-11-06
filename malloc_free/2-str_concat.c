@@ -18,9 +18,10 @@ char *str_concat(char *s1, char *s2)
 	while (s2[i] != '\0')
 	{
 		s1[len] = s2[i];
-		i++;
 		len++;
+		i++;
 	}
+	s1[len]='\0';
 	printf ("%s",s1);
 	return(0);
 }
