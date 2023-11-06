@@ -16,7 +16,7 @@ int **alloc_grid(int width, int height)
 	{
 		array[i]=malloc(sizeof(int)*height);
 	}
-	printf("%d",array);
+	printf("%d",array[width][height]);
 	return(0);
 	
 }
