@@ -10,9 +10,15 @@
 void *malloc_checked(unsigned int b)
 {
 	char *checked;
-
+	unsigned int i;
+	
 	checked = malloc(b);
-	if (checked == NULL)
+	if (checked != NULL)
+	{
+		for (i = 0; i < b; i++)
+			checked[i] = 0;
+		return (checked);
+	}
+	else
 		exit(98);
-	return (checked);
 }
