@@ -29,19 +29,17 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	if (n >= len2)
 		total_len = len1 + len2;
 	else
-		total_len =len1 + n;
-	
-	result= malloc(total_len + 1);
-	
+		total_len = len1 + n;
+
+	result = malloc(total_len + 1);
+
 	if (result == NULL)
-	{
-			return (NULL);
-	}
+		return (NULL);
 
 	strncpy(result, s1, len1);
-	 if (n < len2)
-        strncat(result, s2, n);
+	if (n < len2)
+		strncat(result, s2, n);
 	else
-        strcat(result, s2);
-	 return (result);
+		strcat(result, s2);
+	return (result);
 }
