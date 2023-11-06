@@ -22,6 +22,5 @@ char *str_concat(char *s1, char *s2)
 		i++;
 		len++;
 	}
-	con = s1[len] = '\0';
 	return (con);
 }
