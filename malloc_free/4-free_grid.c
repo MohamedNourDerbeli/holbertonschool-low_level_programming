@@ -3,7 +3,7 @@
 #include <string.h>
 #include "main.h"
 /**
- * alloc_grid - Entry point
+ * free_grid - Entry point
  * @grid : int
  * @height : int
  * Return: void (Success)
@@ -11,7 +11,7 @@
 void free_grid(int **grid, int height)
 {
 	int i;
-	
+
 	while (i < height)
 	{
 		free(grid[i]);
