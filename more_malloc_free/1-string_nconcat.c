@@ -15,6 +15,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	unsigned len2;
 	char *temp = "";
 	char *con;
+	int i =0;
 
 	if (s1 == NULL)
 	{
@@ -36,8 +37,12 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	else
 	{
 		con = malloc(len + n + 1);
-		strncat(temp, s2, n);
-		printf("%s", temp);
+		while (i<n)
+		{
+			temp[i]=s2[i];
+			i++;
+		}
+		
 	}
 
 	if (con == NULL)
