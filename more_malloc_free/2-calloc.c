@@ -3,23 +3,23 @@
 #include <string.h>
 #include "main.h"
 /**
- * string_nconcat - Entry point
- * @s1 : char
- * @s2 : char
+ * _calloc - Entry point
+ * @nmemb : char
+ * @size : char
  * @n : int
  * Return: void (Success)
  */
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
 	int *allc;
-	if (nmemb == 0|| size ==0)
+	if (nmemb == 0 || size == 0)
 	{
-		return(NULL);
+		return (NULL);
 	}
-	allc = (int*)calloc(nmemb ,sizeof(int));
-	if (allc==NULL)
+	allc = (int *)calloc(nmemb, sizeof(int));
+	if (allc == NULL)
 	{
-		return(NULL);
+		return (NULL);
 	}
-	return(allc);
+	return (allc);
 }
