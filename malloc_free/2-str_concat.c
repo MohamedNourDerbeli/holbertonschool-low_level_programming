@@ -10,6 +10,10 @@
  */
 char *str_concat(char *s1, char *s2)
 {
+	int len;
+	int len2;
+	char *con;
+
 	if (s1 == NULL)
 	{
 		s1 = "";
@@ -20,9 +24,9 @@ char *str_concat(char *s1, char *s2)
 		s2 = "";
 	}
 
-	int len = strlen(s1);
-	int len2 = strlen(s2);
-	char *con = malloc(len + len2 + 1);
+	len = strlen(s1);
+	len2 = strlen(s2);
+	con = malloc(len + len2 + 1);
 
 	strcpy(con, s1);
 	strcat(con, s2);
