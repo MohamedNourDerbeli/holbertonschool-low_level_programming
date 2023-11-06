@@ -8,7 +8,7 @@
  * @s2 : char
  * Return: void (Success)
  */
-int **alloc_grid(int width, int height)
+int **alloc_grid(int width,  __attribute__((unused)) int height)
 {
 	typedef int *intpointer;
 	intpointer *grid = malloc(width * sizeof(intpointer));
@@ -16,7 +16,7 @@ int **alloc_grid(int width, int height)
 	{
 		return(NULL);
 	}
-	if (grid <= '0')
+	if (grid[0][0] <= '0')
 	{
 		return(NULL);
 	}
