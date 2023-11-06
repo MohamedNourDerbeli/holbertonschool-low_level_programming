@@ -3,7 +3,7 @@
 #include <string.h>
 #include "main.h"
 /**
- * _strdup - Entry point
+ * str_concat - Entry point
  * @s1 : char
  * @s2 : char
  * Return: void (Success)
@@ -18,7 +18,7 @@ char *str_concat(char *s1, char *s2)
 	{
 		return (NULL);
 	}
-	if (s1 != NULL )
+	if (s1 != NULL)
 	{
 		strcpy(con, s1);
 	}
@@ -27,6 +27,7 @@ char *str_concat(char *s1, char *s2)
 	{
 		strcat(con, s2);
 	}
-	return (con);
+	printf ("%s",con);
 	free(con);
+	return(0);
 }
