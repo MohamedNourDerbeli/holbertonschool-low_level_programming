@@ -10,27 +10,13 @@
  */
 int **alloc_grid(int width, int height)
 {
-	int w;
-	int h;
-	typedef int *intpointer;
-	intpointer *grid = malloc((width * height) * sizeof(int));
-	if (grid == NULL)
+	int i = 0;
+	int o = 0;
+	int *mall = malloc((width * height) * sizeof(int));
+	while (i < width)
 	{
-		return (NULL);
+		mall[i] = 0;
+		i++;
 	}
-
-	h = 0;
-	while (h < height)
-	{
-		w = 0;
-		while (w < width)
-		{
-			printf("%d ", grid[h]);
-			w++;
-		}
-		printf("\n");
-		h++;
-	}
-
-	return (grid);
+	return (mall);
 }
