@@ -11,12 +11,13 @@
 int **alloc_grid(int width, int height)
 {
 	int i = 0;
-	int o = 0;
+	 __attribute__((unused)) int o = 0;
 	int *mall = malloc((width * height) * sizeof(int));
 	while (i < width)
 	{
 		mall[i] = 0;
 		i++;
 	}
-	return (mall);
+	printf("%d",mall);
+	return (0);
 }
