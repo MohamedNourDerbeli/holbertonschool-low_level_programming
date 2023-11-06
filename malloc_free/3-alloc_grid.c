@@ -19,7 +19,7 @@ int **alloc_grid(int width,  int height)
 	
 	while (i<height)
 	{
-		printf("%d",array[i]= '0');
+		printf("%d",array[i]= 0);
 		i++;
 	}
 	return(0);
