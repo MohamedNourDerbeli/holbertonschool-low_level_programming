@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
 #include "main.h"
 /**
  * _strdup - Entry point
@@ -11,6 +12,7 @@ char *str_concat(char *s1, char *s2)
 {
 	int i = 0;
 	int len = strlen(s1);
+	int len2;
 
 	if (s1 == NULL)
 	{
@@ -23,7 +25,7 @@ char *str_concat(char *s1, char *s2)
 		len++;
 	}
 	s1[len] = '\0';
-	int len2 = strlen(s1);
+	len2 = strlen(s1);
 	s1 = malloc(sizeof(char) * len2);
 	return (s1);
 }
