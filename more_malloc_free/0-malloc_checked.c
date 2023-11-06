@@ -13,7 +13,8 @@ void *malloc_checked(unsigned int b)
 
 	if (checked == NULL)
 	{
-		return (NULL);
+		printf("98");
+		return ;
 	}
 
 	return (checked);
