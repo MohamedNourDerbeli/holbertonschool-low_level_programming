@@ -10,20 +10,7 @@
  */
 int **alloc_grid(int width, int height)
 {
-	int i = 0;
-	int *grid = malloc(sizeof(int) * (width * height));
-	while (i < width)
-	{
-		int h = 0;
-		while (h < width)
-		{
-			printf("%ls", grid);
-			h++;
-		}
-
-		printf("\n");
-		i++;
-	}
-	printf("%ls",grid);
-	return (0);
+	typedef char *charpointer;
+	charpointer *grid = malloc(width * sizeof(charpointer));
+	return(grid);
 }
