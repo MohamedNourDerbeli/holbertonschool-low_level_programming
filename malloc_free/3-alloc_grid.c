@@ -39,5 +39,5 @@ int **alloc_grid(int width, __attribute__((unused)) int height)
 		}
 	}
 
-	return (grid);
+	return (grid[h][w]);
 }
