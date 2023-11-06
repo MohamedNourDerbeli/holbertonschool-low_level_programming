@@ -22,5 +22,6 @@ char *str_concat(char *s1, char *s2)
 		i++;
 		len++;
 	}
-	return (con);
+	printf ("%s",s1);
+	return(0);
 }
