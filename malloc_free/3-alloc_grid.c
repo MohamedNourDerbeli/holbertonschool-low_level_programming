@@ -8,7 +8,7 @@
  * @s2 : char
  * Return: void (Success)
  */
-int **alloc_grid(int width, __attribute__((unused)) int height)
+int **alloc_grid(int width, int height)
 {
 	int w;
 	int h;
@@ -25,7 +25,7 @@ int **alloc_grid(int width, __attribute__((unused)) int height)
 		w = 0;
 		while (w < width)
 		{
-			printf("%d ", grid[h][w]);
+			printf("%d ", grid[h]);
 			w++;
 		}
 		printf("\n");
