@@ -1,6 +1,6 @@
 #include <stdio.h>
-void main()
+int main(void)
 {
-	fprintf(stderr,"%d", __FILE__);
-	return;
+	fprintf(stderr,"%s", __FILE__);
+	return(0);
 }
