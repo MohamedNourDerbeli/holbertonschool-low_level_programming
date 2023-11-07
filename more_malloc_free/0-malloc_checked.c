@@ -1,7 +1,6 @@
 #include "main.h"
-#include <stdio.h>
 #include <stdlib.h>
-#include <limits.h>
+
 /**
  * malloc_checked - Entry point
  * @b : int
@@ -20,6 +19,7 @@ int main(void)
 {
     char *c;
     
-    c = malloc_checked(sizeof(char) * 1024);
-    return (c);
+    c =(char *) malloc_checked(sizeof(char) * 1024);
+	printf("%s\n", c);
+    return (0);
 }
