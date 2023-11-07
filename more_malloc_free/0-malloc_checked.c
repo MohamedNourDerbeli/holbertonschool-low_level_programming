@@ -9,13 +9,10 @@
  */
 void *malloc_checked(unsigned int b)
 {
-	char *checked;
+	void *checked = malloc(b);
 
-	checked = malloc(b);
-	if (checked != NULL)
-	{
-		return (checked);
-	}
-	else
+	if (checked == NULL)
 		exit(98);
+	
+	return (checked);
 }
