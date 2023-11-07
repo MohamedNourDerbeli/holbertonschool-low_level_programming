@@ -3,7 +3,7 @@
 #include <string.h>
 #include "main.h"
 /**
- * str_concat - Entry point
+ * str_concat - Entry pooint
  * @s1 : char
  * @s2 : char
  * Return: void (Success)
