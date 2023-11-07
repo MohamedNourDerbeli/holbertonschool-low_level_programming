@@ -15,11 +15,3 @@ void *malloc_checked(unsigned int b)
 
 	return (check);
 }
-int main(void)
-{
-    char *c;
-    
-    c =(char *) malloc_checked(sizeof(char) * 1024);
-	printf("%s\n", c);
-    return (0);
-}
