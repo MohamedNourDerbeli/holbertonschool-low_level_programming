@@ -1,6 +1,6 @@
 # C Programs README
 
-![Project Logo](https://images.shiksha.com/mediadata/ugcDocuments/images/wordpressImages/2023_07_Hello-World-Program-in-C.jpg)
+![Project Logo](https://goprogramscoding.files.wordpress.com/2019/07/hello-world.png)
 
 
 ## Overview
