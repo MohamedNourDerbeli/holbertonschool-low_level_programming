@@ -1,5 +1,7 @@
 # C Programs README
 
+![Project Logo](https://via.placeholder.com/150)
+
 ## Overview
 
 This repository hosts a collection of small C programs, each addressing a specific task. Explore the individual programs for details on their functionality.
@@ -16,6 +18,10 @@ This repository hosts a collection of small C programs, each addressing a specif
 8. [Example Usage](#example-usage)
 9. [Contributing](#contributing)
 10. [License](#license)
+
+## Project Logo
+
+![Project Logo](https://via.placeholder.com/150)
 
 ## 0-whatsmyname.c
 
