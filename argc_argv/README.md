@@ -1,6 +1,6 @@
 # C Programs README
 
-![Project Logo](https://image.slidesharecdn.com/mallocandcallocinc-140206191045-phpapp02/75/malloc-and-calloc-in-c-1-2048.jpg?cb=1668293665)
+![Project Logo](https://i.ytimg.com/vi/decAHMKIo_A/maxresdefault.jpg)
 
 ## Overview
 
