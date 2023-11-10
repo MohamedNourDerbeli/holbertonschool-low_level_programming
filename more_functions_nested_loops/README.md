@@ -43,11 +43,3 @@ This repository contains several C source files related to functions and loops. 
 10. **`9-fizz_buzz.c`**
     - **Description:** A function that prints the numbers from 1 to 100. For multiples of three, print "Fizz" instead of the number, and for the multiples of five, print "Buzz." For numbers that are multiples of both three and five, print "FizzBuzz."
     - **Usage:** Include the function in your C program.
-
-## Contributing
-
-If you'd like to contribute or improve these functions, feel free to submit a pull request. Please follow our [Contributing Guidelines](CONTRIBUTING.md).
-
-## License
-
-This project is licensed under the [MIT License](LICENSE).
