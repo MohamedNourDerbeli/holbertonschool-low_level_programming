@@ -4,12 +4,13 @@
  * @name : char
  * @age : float
  * @owner : char
- * @d : d
+ * Return: Always 0.
  */
 dog_t *new_dog(char *name, float age, char *owner)
 {
 	dog_t *d;
 	int l1, l2;
+
 	d = malloc(sizeof(dog_t));
 	if (d == NULL)
 	{
