@@ -1,9 +1,6 @@
 #include "dog.h"
 /**
  * print_dog - check the code
- * @name : char
- * @age : float
- * @owner : char
  * @d : d
  */
 void print_dog(struct dog *d)
