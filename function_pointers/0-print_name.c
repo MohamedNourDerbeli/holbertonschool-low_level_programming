@@ -1,5 +1,3 @@
-#ifndef PRINT
-#define PRINT
 #include "function_pointers.h"
 /**
  * print_name - prints a name as is
@@ -14,6 +12,4 @@ void print_name(char *name, void (*f)(char *))
 	{
 		f(name);
 	}
-	return;
 }
-#endif
