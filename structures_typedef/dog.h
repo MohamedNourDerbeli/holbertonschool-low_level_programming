@@ -1,5 +1,5 @@
-#ifdef DOG_H
-#define DOG_H
+#ifndef DOG
+#define DOG
 /**
  * struct dog - check the code
  * @name : char
