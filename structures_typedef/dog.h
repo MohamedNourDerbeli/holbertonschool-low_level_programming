@@ -7,7 +7,6 @@
  * @name : char
  * @age : float
  * @owner : char
- * @d : p
  */
 struct dog
 {
