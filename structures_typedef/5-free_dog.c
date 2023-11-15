@@ -1,7 +1,7 @@
 #include "dog.h"
 /**
  * free_dog - check the code
- * @d : 
+ * @d : d
  * Return: Always 0.
  */
 void free_dog(dog_t *d)
