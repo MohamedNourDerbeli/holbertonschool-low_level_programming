@@ -8,7 +8,7 @@
 
 void print_name(char *name, void (*f)(char *))
 {
+	printf("%s",name);
 	f(name);
-	printf("%s %s",f,name);
 	return;
 }
