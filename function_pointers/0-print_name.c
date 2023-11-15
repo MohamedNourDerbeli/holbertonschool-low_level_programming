@@ -8,6 +8,6 @@
 
 void print_name(char *name, void (*f)(char *))
 {
-	printf("%s %s\n",f,name);
+	printf("%s %s\n",*f,name);
 	return;
 }
