@@ -1,19 +1,21 @@
 #include "function_pointers.h"
 /**
- * print_name - prints a name as is
- * @name: name of the person
- * @f : pointer
+ * array_iterator - prints a name as is
+ * @array: name of the person
+ * @size : pointer
+ * @action : pointer
  * Return: Nothing.
  */
 
 void array_iterator(int *array, size_t size, void (*action)(int))
 {
+	size_t i;
+
 	if (array && action)
 	{
-		while (size > 0)
+		for (i = 0; i < size; i++)
 		{
-		action(array[size-1]);	
+			action(array[i]);
 		}
-		
 	}
 }
