@@ -9,19 +9,13 @@ op_t ops[] = {
 	{NULL, NULL}};
 int (*get_op_func(char *s))(int, int)
 {
-	int i=0;
-	
-	if (ops->op)
+	int i = 0;
+
+	while (s && s[0] == ops[i].op[0] && !s[1])
 	{
-	while (s != ops->op)
-	{
-		ops[i].op;
+		return (ops[i].f);
 		i++;
-	return(ops[i].op);
-	}
 	}
 
-	return(NULL);
-
-	
+	return (NULL);
 }
