@@ -13,7 +13,7 @@ int (*get_op_func(char *s))(int, int)
 	
 	if (ops)
 	{
-	while (s != ops)
+	while (s != ops->op)
 	{
 		ops[i].op;
 		i++;
