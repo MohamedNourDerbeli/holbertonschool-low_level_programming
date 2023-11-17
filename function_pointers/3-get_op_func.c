@@ -15,10 +15,12 @@ int (*get_op_func(char *s))(int, int)
 	{
 	while (s != ops)
 	{
-		ops[i];
+		ops[i].op;
 		i++;
 	}
+	return(ops[i].op);
 	}
+	return(NULL);
 
 	
 }
