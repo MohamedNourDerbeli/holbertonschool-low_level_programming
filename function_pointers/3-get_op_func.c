@@ -11,7 +11,7 @@ int (*get_op_func(char *s))(int, int)
 {
 	int i=0;
 	
-	if (ops)
+	if (ops->op)
 	{
 	while (s != ops->op)
 	{
