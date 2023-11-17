@@ -9,9 +9,7 @@ int main(int argc, char *argv[])
 	}
 	else
 	{
-
-		char s = atoi(argv[2]);
-	get_op_func(s);
+	get_op_func(argv[2]);
 	
 
 	}
