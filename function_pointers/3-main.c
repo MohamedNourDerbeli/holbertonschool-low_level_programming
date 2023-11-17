@@ -1,6 +1,6 @@
 #include "3-calc.h"
 
-int main(int argc, char *argv[])
+int main(int argc, char **argv)
 {
 	int (*result)(int, int), a, b;
 	if (argc != 4)
