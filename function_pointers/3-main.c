@@ -2,14 +2,24 @@
 
 int main(int argc, char *argv[])
 {
-	if (argc < 4 || argc > 4)
+	int (*result)(int, int), a, b;
+	if (argc != 4)
 	{
 		printf("Error\n");
 		exit(98);
 	}
-	else
+
+	int a = atoi(argv[1]);
+	int b = atoi(argv[3]);
+	result = get_op_func(argv[2]);
+	if (!result)
 	{
-		get_op_func(argv[2]);
+		printf("Error\n"), exit(99);
 	}
-	return(0);
+	if (!b && argv[2][0] == '/' || argv[2][0] == '%')
+	{
+		printf("Error\n"), exit(100);
+	}
+	printf("%d\n", result(a, b));
+	return (0);
 }
