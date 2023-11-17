@@ -9,9 +9,7 @@ int main(int argc, char *argv[])
 	}
 	else
 	{
-	get_op_func(argv[2]);
-	
-
+		get_op_func(argv[2]);
 	}
-	
+	return(0);
 }
