@@ -17,8 +17,8 @@ int (*get_op_func(char *s))(int, int)
 	{
 		ops[i].op;
 		i++;
-	}
 	return(ops[i].op);
+	}
 	}
 
 	return(NULL);
