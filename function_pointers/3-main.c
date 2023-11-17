@@ -11,7 +11,7 @@ int main(int argc, char *argv[])
 	{
 		int a = atoi(argv[1]);
 		int b = atoi(argv[3]);
-		f(a,b);
+	printf('%d',get_op_func);
 	}
 	
 }
