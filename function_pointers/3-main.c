@@ -11,9 +11,8 @@ int main(int argc, char *argv[])
 	{
 		int a = atoi(argv[1]);
 		int b = atoi(argv[3]);
-		char s = argv[2];
-		f(a,b);
-		get_op_func(s);
+		char s = atoi(argv[2]);
+
 	}
 	
 }
