@@ -48,25 +48,26 @@ void print_all(const char *const format, ...)
 	va_start(list, format);
 	if (format == NULL)
 	{
+		printf("\n");
 		return;
 	}
 	i = 0;
-while (format[i])
-{
-    j = 0;
-    while (f[j].str)
-    {
-        if (f[j].str == format[i])
-        {
-            printf("%s", sepa);
-            f[j].print(&list);
-            sepa = ", ";
-            break;
-        }
-        j++;
-    }
-    i++;
-}
+	while (format[i])
+	{
+		j = 0;
+		while (f[j].str)
+		{
+			if (f[j].str == format[i])
+			{
+				printf("%s", sepa);
+				f[j].print(&list);
+				sepa = ", ";
+				break;
+			}
+			j++;
+		}
+		i++;
+	}
 	printf("\n");
 	va_end(list);
 }
