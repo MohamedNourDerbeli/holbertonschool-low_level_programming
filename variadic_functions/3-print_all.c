@@ -1,27 +1,42 @@
 #include "variadic_functions.h"
 /**
- *  - check the code
- *
- * Return: Always 0.
+ * char_print - check the code
+ * @list: macro
  */
-
 void char_print(va_list *list)
 {
 	printf("%c", va_arg(*list, int));
 }
+/**
+ * int_print - check the code
+ * @list: macro
+ */
 void int_print(va_list *list)
 {
 	printf("%d", va_arg(*list, int));
 }
+/**
+ *  float_print - check the code
+ * @list: macro
+ */
 void float_print(va_list *list)
 {
 	printf("%f", va_arg(*list, double));
 }
+/**
+ * string_print - check the code
+ * @list: macro
+ */
 void string_print(va_list *list)
 {
 	char *str = va_arg(*list, char *);
+
 	printf("%s", (str == NULL) ? "(nil)" : str);
 }
+/**
+ *  print_all - check the code
+ *
+ */
 void print_all(const char *const format, ...)
 {
 	fmt f[] = {
@@ -33,6 +48,7 @@ void print_all(const char *const format, ...)
 	const char *sepa = "";
 	va_list list;
 	int i, j;
+
 	va_start(list, format);
 	if (format == NULL)
 	{
