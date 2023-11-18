@@ -23,10 +23,9 @@ void print_strings(const char *separator, const unsigned int n, ...)
 		return;
 	}
 
-
 	for (i = 0; i < n; i++)
 	{
-		str = va_arg(list, char*);
+		str = va_arg(list, char *);
 		if (str == NULL)
 			printf("(nil)");
 		printf("%s", str);
