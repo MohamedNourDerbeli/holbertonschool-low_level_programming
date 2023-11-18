@@ -1,6 +1,6 @@
 #include "3-calc.h"
 /**
- * get_op_func - check the code
+ * main - check the code
  *
  * @argc: int
  * @**argv : int
