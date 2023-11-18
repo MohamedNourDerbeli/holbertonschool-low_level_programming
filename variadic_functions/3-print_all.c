@@ -27,8 +27,6 @@ void string_print(va_list *list)
 {
 	char *str = va_arg(*list, char *);
 	printf("%s", (str == NULL) ? "(nil)" : str);
-
-	printf("%s", str);
 }
 void print_all(const char *const format, ...)
 {
