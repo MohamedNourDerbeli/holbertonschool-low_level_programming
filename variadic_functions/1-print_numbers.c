@@ -11,10 +11,15 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 	va_list list;
 	unsigned int i, num = 0;
 
-	if (n == 0|| separator == NULL)
+	if (n == 0)
 	{
 		return;
 	}
+	if (separator == NULL)
+	{
+		separator = "";
+	}
+
 	va_start(list, n);
 
 	for (i = 0; i < n; i++)
