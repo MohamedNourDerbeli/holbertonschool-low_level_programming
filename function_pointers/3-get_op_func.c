@@ -1,4 +1,9 @@
 #include "3-calc.h"
+/**
+ * get_op_func - check the code
+ *
+ * @*s: The operator
+ */
 
 int (*get_op_func(char *s))(int, int)
 {
