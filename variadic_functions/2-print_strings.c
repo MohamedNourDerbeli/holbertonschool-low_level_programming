@@ -1,7 +1,7 @@
 #include "variadic_functions.h"
 
 /**
- * print_numbers - check the code
+ * print_strings - check the code
  * @separator:car
  * @n: int
  * Return: Always 0.
@@ -11,6 +11,7 @@ void print_strings(const char *separator, const unsigned int n, ...)
 	char *str;
 	unsigned int i;
 	va_list list;
+
 	va_start(list, n);
 	if (separator == NULL)
 	{
