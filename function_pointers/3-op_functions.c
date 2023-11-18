@@ -1,8 +1,8 @@
 #include "3-calc.h"
 /**
  * op_add - check the code
- * @a : int
- * @b : int
+ * @a: int
+ * @b: int
  */
 int op_add(int a, int b)
 {
@@ -10,8 +10,8 @@ int op_add(int a, int b)
 }
 /**
  * op_sub - check the code
- * @a : int
- * @b : int
+ * @a: int
+ * @b: int
  */
 int op_sub(int a, int b)
 {
@@ -20,8 +20,8 @@ int op_sub(int a, int b)
 /**
  * op_mul - check the code
  *
- * @a : int
- * @b : int
+ * @a: int
+ * @b: int
  */
 int op_mul(int a, int b)
 {
@@ -30,8 +30,8 @@ int op_mul(int a, int b)
 /**
  * op_div - check the code
  *
- * @a : int
- * @b : int
+ * @a: int
+ * @b: int
  */
 int op_div(int a, int b)
 {
@@ -40,8 +40,8 @@ int op_div(int a, int b)
 /**
  * op_mod - check the code
  *
- * @a : int
- * @b : int
+ * @a: int
+ * @b: int
  */
 int op_mod(int a, int b)
 {
