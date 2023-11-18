@@ -2,6 +2,7 @@
 /**
  * get_op_func - check the code
  * @s: char
+ * Return: null
  */
 int (*get_op_func(char *s))(int, int)
 {
