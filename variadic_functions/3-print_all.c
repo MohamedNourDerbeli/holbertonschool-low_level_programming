@@ -5,12 +5,6 @@
  * Return: Always 0.
  */
 
-typedef struct form
-{
-	char str;
-	void (*print)(va_list *);
-} fmt;
-
 void char_print(va_list *list)
 {
 	printf("%c", va_arg(*list, int));
