@@ -1,10 +1,8 @@
 #include "3-calc.h"
 /**
  * get_op_func - check the code
- *
- * @s: The operator
+ * @s: int 
  */
-
 int (*get_op_func(char *s))(int, int)
 {
 	op_t ops[] = {
