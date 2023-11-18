@@ -26,6 +26,11 @@ void float_print(va_list *list)
 void string_print(va_list *list)
 {
 	char *str = va_arg(*list, char *);
+	if (str == NULL)
+	{
+		printf("(nil)");
+		return;
+	}
 
 	printf("%s", str);
 }
