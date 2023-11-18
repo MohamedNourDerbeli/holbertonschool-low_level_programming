@@ -2,7 +2,7 @@
 /**
  * get_op_func - check the code
  *
- * @*s: The operator
+ * @s: The operator
  */
 
 int (*get_op_func(char *s))(int, int)
