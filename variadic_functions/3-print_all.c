@@ -35,7 +35,7 @@ void string_print(va_list *list)
 }
 /**
  *  print_all - check the code
- *
+ * @format: char
  */
 void print_all(const char *const format, ...)
 {
