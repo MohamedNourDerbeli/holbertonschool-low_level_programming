@@ -6,9 +6,8 @@
  */
 size_t print_list(const list_t *h)
 {
-	const list_t current = *h;
 	int s = 0;
-	while (current.next != NULL)
+	while (h != NULL)
 	{
 		if (h->str == NULL)
 		{
