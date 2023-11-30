@@ -18,4 +18,4 @@ To use the doubly linked list in your project, follow these steps:
 1. Clone this repository:
 
    ```bash
-   git clone https://github.com/your-username/doubly-linked-list.git
+   git clone https://github.com/MohamedNourDerbeli/holbertonschool-low_level_programming/tree/main/doubly_linked_lists
