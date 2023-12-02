@@ -1,6 +1,6 @@
 #include "lists.h"
 /**
- * free_list - check the code
+ * free_dlistint - check the code
  * @head: list
  * Return: Always 0.
  */
