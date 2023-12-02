@@ -1,6 +1,6 @@
 #include "lists.h"
 /**
- * get_dnodeint_at_index - check the code
+ * delete_dnodeint_at_index - check the code
  * @head: list_t
  * @index: int
  * Return: Always 0.
@@ -17,6 +17,12 @@ int delete_dnodeint_at_index(dlistint_t **head, unsigned int index)
 			return (-1);
 		}
 	}
+	if (selectedindex->prev==NULL)
+	{
+		selectedindex->next->prev = NULL;
+		*head = selectedindex->next;
+	}
+
 	if (selectedindex->next != NULL && selectedindex->prev != NULL)
 	{
 		selectedindex->prev->next = selectedindex->next;
