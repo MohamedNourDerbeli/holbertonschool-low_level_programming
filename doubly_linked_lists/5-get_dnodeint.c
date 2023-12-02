@@ -1,8 +1,8 @@
 #include "lists.h"
 /**
- * add_dnodeint_end - check the code
+ * get_dnodeint_at_index - check the code
  * @head: list_t
- * @n: int
+ * @index: int
  * Return: Always 0.
  */
 
@@ -10,6 +10,7 @@ dlistint_t *get_dnodeint_at_index(dlistint_t *head, unsigned int index)
 {
 	dlistint_t *node;
 	unsigned int i = 0;
+
 	node = head;
 	if (!node)
 	{
