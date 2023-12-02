@@ -18,18 +18,17 @@ int sum_dlistint(dlistint_t *head)
 		count = sum->n;
 	}
 
-	while (sum->next!= NULL)
+	while (sum->next != NULL)
 	{
 		sum = sum->next;
 		count += sum->n;
-		if (sum->next ==NULL)
+		if (sum->next == NULL)
 		{
 			sum = sum->next;
 			count += sum->n;
 			break;
 		}
 	}
-	
-	
+
 	return (count);
 }
