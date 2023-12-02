@@ -21,6 +21,11 @@ dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
 	for (count = 0; count <= idx; count++)
 	{
 		first_node = first_node->next;
+		if (sum->next == NULL)
+		{
+			sum = sum->next;
+			return (NULL);
+		}
 	}
 	node->next = first_node->next;
 	first_node->next = node;
