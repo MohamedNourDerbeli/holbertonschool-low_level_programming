@@ -20,7 +20,6 @@ int sum_dlistint(dlistint_t *head)
 
 	while (sum->next != NULL)
 	{
-		sum = sum->next;
 		count += sum->n;
 		if (sum->next->next == NULL)
 		{
@@ -28,6 +27,7 @@ int sum_dlistint(dlistint_t *head)
 			count += sum->n;
 			break;
 		}
+		sum = sum->next;
 	}
 
 	return (count);
