@@ -1,14 +1,14 @@
 #include "lists.h"
 /**
- * add_node_end - check the code
+ * add_dnodeint_end - check the code
  * @head: list_t
- * @str: char
+ * @n: int
  * Return: Always 0.
  */
 
 dlistint_t *add_dnodeint_end(dlistint_t **head, const int n)
 {
-	dlistint_t *new_node = malloc(sizeof(dlistint_t)),*last_node;
+	dlistint_t *new_node = malloc(sizeof(dlistint_t)), *last_node;
 
 	if (!new_node || !head)
 	{
