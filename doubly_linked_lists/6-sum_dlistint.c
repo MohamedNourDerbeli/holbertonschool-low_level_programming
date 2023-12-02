@@ -22,7 +22,7 @@ int sum_dlistint(dlistint_t *head)
 	{
 		sum = sum->next;
 		count += sum->n;
-		if (sum->next == NULL)
+		if (sum->next->next == NULL)
 		{
 			sum = sum->next;
 			count += sum->n;
