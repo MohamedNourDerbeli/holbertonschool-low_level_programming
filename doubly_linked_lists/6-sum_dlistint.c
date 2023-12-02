@@ -18,7 +18,6 @@ int sum_dlistint(dlistint_t *head)
 		sum = sum->next;
 		count += sum->n;
 	}
-	if (count == 0)
-		return (0);
+	
 	return (count);
 }
