@@ -25,7 +25,7 @@ dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
 		*h = node;
 		return (node);
 	}
-	if (idx > 0)
+	if (idx > 0 && first_node->next !=NULL)
 	{
 
 		for (count = 0; count < idx; count++)
