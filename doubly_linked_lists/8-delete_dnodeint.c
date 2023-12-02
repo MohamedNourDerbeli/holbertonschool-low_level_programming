@@ -22,16 +22,22 @@ int delete_dnodeint_at_index(dlistint_t **head, unsigned int index)
 	{
 		selectedindex->next->prev = NULL;
 		*head = selectedindex->next;
+		free(selectedindex->n);
+		free(selectedindex);
 	}
 
 	if (selectedindex->next != NULL && selectedindex->prev != NULL)
 	{
 		selectedindex->prev->next = selectedindex->next;
 		selectedindex->next->prev = selectedindex->prev;
+		free(selectedindex->n);
+		free(selectedindex);
 	}
 	else if (selectedindex->next == NULL)
 	{
 		selectedindex->prev->next = NULL;
+		free(selectedindex->n);
+		free(selectedindex);
 	}
 
 	return (1);
