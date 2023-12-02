@@ -13,32 +13,34 @@ int delete_dnodeint_at_index(dlistint_t **head, unsigned int index)
 	{
 		selectedindex = selectedindex->next;
 		if (selectedindex == NULL)
-		{
 			return (-1);
-		}
 		count++;
 	}
-	if (selectedindex->prev==NULL)
+	if (selectedindex->prev == NULL && selectedindex->next != NULL)
 	{
 		selectedindex->next->prev = NULL;
 		*head = selectedindex->next;
-		free(selectedindex->n);
 		free(selectedindex);
+		return (1);
 	}
-
-	if (selectedindex->next != NULL && selectedindex->prev != NULL)
+	if (selectedindex->prev != NULL && selectedindex->next == NULL)
+	{
+		selectedindex->prev->next = NULL;
+		free(selectedindex);
+		return (1);
+	}
+	if (selectedindex->prev == NULL && selectedindex->next == NULL)
+	{
+		free(selectedindex);
+		return (1);
+	}
+	else
 	{
 		selectedindex->prev->next = selectedindex->next;
 		selectedindex->next->prev = selectedindex->prev;
-		free(selectedindex->n);
 		free(selectedindex);
+		return (1);
 	}
-	else if (selectedindex->next == NULL)
-	{
-		selectedindex->prev->next = NULL;
-		free(selectedindex->n);
-		free(selectedindex);
-	}
-
+	free(selectedindex);
 	return (1);
 }
