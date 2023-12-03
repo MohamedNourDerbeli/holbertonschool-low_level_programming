@@ -7,9 +7,9 @@
  */
 unsigned int binary_to_uint(const char *b)
 {
-	int decimal = 0, weight = 1, binary = atoi(b), rem;
 	if (!b)
 		return (0);
+	int decimal = 0, weight = 1, binary = atoi(b), rem;
 
 	while (binary != 0)
 	{
