@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * get_bit - check the code
+ * set_bit - check the code
  * @n: int
  * @index: index
  * Return: Always 0.
