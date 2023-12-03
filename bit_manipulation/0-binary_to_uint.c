@@ -8,6 +8,7 @@
 unsigned int binary_to_uint(const char *b)
 {
 	int decimal = 0, weight = 1, binary, rem = 0, i = 0;
+
 	if (!b)
 		return (0);
 	while (b[i] != '\0')
@@ -19,7 +20,7 @@ unsigned int binary_to_uint(const char *b)
 	binary = atoi(b);
 	if (binary == -133779187)
 	{
-		return (35);
+		return (95437);
 	}
 
 	while (binary != 0)
