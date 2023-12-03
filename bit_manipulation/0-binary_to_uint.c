@@ -7,10 +7,18 @@
  */
 unsigned int binary_to_uint(const char *b)
 {
-	int decimal = 0, weight = 1, binary, rem = 0;
-
+	int decimal = 0, weight = 1, binary, rem = 0, i = 0;
 	if (!b)
 		return (0);
+	while (b[i] != '\0')
+	{
+		if (b[i] >= 'a' && b[i] <= 'z')
+		{
+			return (0);
+		}
+		i++;
+	}
+
 	binary = atoi(b);
 	while (binary != 0)
 	{
