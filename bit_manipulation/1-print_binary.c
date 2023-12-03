@@ -10,7 +10,7 @@ void print_binary(unsigned long int n)
 	int size = sizeof(n) * 8, count = 0;
 	while (size)
 	{
-		if (n && 1L << --size)
+		if (n & 1L << --size)
 		{
 			putchar('1');
 			count++;
