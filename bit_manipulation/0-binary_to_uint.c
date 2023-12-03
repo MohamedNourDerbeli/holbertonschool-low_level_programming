@@ -7,10 +7,11 @@
  */
 unsigned int binary_to_uint(const char *b)
 {
-	int decimal = 0, weight = 1, binary = atoi(b), rem;
+	int decimal = 0, weight = 1, binary, rem;
 
-	if (b== NULL)
+	if (b == NULL)
 		return (0);
+	binary = atoi(b);
 	while (binary != 0)
 	{
 		rem = binary % 10;
