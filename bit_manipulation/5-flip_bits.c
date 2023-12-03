@@ -1,8 +1,8 @@
 #include "main.h"
 /**
- * clear_bit - check the code
+ * flip_bits - check the code
  * @n: int
- * @index: index
+ * @m: index
  * Return: Always 0.
  */
 unsigned int flip_bits(unsigned long int n, unsigned long int m)
