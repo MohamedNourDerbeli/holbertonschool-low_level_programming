@@ -13,13 +13,11 @@ void print_binary(unsigned long int n)
 		if (n & 1L << --size)
 		{
 			putchar('1');
-			putchar('-');
 			count++;
 		}
 		else if (count)
 		{
 			putchar('0');
-			putchar('-');
 		}
 	}
 	if (!count)
