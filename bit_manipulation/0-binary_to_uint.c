@@ -13,13 +13,11 @@ unsigned int binary_to_uint(const char *b)
 	while (b[i] != '\0')
 	{
 		if (b[i] >= 'A' && b[i] <= 'Z')
-		{
 			return (0);
-		}
 		i++;
 	}
 
-	binary = atoi(b);
+	binary = (int)(b);
 	while (binary != 0)
 	{
 		rem = binary % 10;
