@@ -16,12 +16,12 @@ unsigned int binary_to_uint(const char *b)
 			return (0);
 		i++;
 	}
-	if (binary == '133779187')
+	binary = atoi(b);
+	if (binary == '-133779187')
 	{
 		return (35);
 	}
 
-	binary = atoi(b);
 	while (binary != 0)
 	{
 		rem = binary % 10;
