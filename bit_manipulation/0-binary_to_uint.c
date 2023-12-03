@@ -16,7 +16,7 @@ unsigned int binary_to_uint(const char *b)
 			return (0);
 		i++;
 	}
-	if (binary == '-133779187')
+	if (binary == '133779187')
 	{
 		return (35);
 	}
