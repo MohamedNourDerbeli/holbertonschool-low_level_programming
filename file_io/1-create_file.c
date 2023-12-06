@@ -9,7 +9,14 @@
 
 int create_file(const char *filename, char *text_content)
 {
-	int fd, n = strlen(text_content);
+	int fd, n;
+	if (!text_content)
+	{
+		n = 0;
+	}
+	else
+		n = strlen(text_content);
+
 	fd = open(filename, O_CREAT | O_WRONLY | O_TRUNC);
 	if (!text_content)
 	{
