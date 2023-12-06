@@ -34,6 +34,5 @@ int main(int ac, char **av)
         exit(1);
     }
     res = cp_textfile(av[1], av[2]);
-    printf("-> %i)\n", res);
     return (0);
 }
