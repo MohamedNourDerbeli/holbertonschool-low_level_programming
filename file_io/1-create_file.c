@@ -14,6 +14,8 @@ int create_file(const char *filename, char *text_content)
 
 	n = read(STDOUT_FILENO, buf, 600);
 	fd = open(filename, O_CREAT | O_WRONLY, text_content);
+	if (fd == -1)
+		return (-1);
 	write(fd, buf, n);
 	close(fd);
 	return (1);
