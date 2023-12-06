@@ -33,7 +33,7 @@ int main(int ac, char **av)
 	}
 	if (ac != 3)
 	{
-		dprintf(2, "Usage: cp file_from file_to");
+		dprintf(2, "Usage: cp file_from file_to\n");
 		exit(97);
 	}
 
