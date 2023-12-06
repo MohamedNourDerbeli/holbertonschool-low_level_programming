@@ -22,10 +22,15 @@ ssize_t cp_textfile(const char *file_from, const char *file_to)
 
 	fd1 = open(file_to, O_CREAT | O_WRONLY | O_TRUNC, 0664);
 	write(fd1, buf, x);
+	if (fd1 == -1 || write(fd1, buf, x) == -1)
+	{
+		dprintf(2, "Error: Can't write to NAME_OF_THE_FILE");
+		exit(99);
+	}
 	close(fd1);
 	if (close(fd1) == -1)
 	{
-		dprintf(2, "Error: Can't close fd");
+		dprintf(2, "Error: Can't close fd FD_VALUE");
 		exit(100);
 	}
 
