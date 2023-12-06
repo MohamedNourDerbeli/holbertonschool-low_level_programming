@@ -11,9 +11,9 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	int fd, n = 0;
 	char buf[50000];
 
-	fd = open(filename, O_RDONLY);
-	if (!filename)
+	if (filename == NULL)
 		return (0);
+	fd = open(filename, O_RDONLY);
 	n = read(fd, buf, letters);
 	write(1, buf, n);
 	close(fd);
