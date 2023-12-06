@@ -19,6 +19,7 @@ ssize_t cp_textfile(const char *file_from, const char *file_to)
 	fd = open(file_from, O_RDONLY);
 	x = read(fd, buf, 1000);
 	close(fd);
+	
 	fd1 = open(file_to, O_CREAT | O_WRONLY | O_TRUNC, 0664);
 	write(fd1, buf, x);
 	close(fd1);
@@ -30,6 +31,11 @@ int main(int ac, char **av)
 	{
 		dprintf(2, "Error: Can't read from file NAME_OF_THE_FILE\n");
 		exit(98);
+	}
+	if (av[2] == NULL)
+	{
+		dprintf(2, "Error: Can't write to\n");
+		exit(99);
 	}
 	if (ac != 3)
 	{
