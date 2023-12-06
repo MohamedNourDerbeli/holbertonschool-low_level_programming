@@ -25,7 +25,7 @@ ssize_t cp_textfile(const char *file_from, const char *file_to)
 	close(fd1);
 	if (close(fd1) == -1)
 	{
-		dprintf(2, "Can't close fd");
+		dprintf(2, "Error: Can't close fd");
 		exit(100);
 	}
 
