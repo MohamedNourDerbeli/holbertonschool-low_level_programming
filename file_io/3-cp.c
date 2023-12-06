@@ -32,11 +32,6 @@ int main(int ac, char **av)
 		dprintf(2, "Error: Can't read from file NAME_OF_THE_FILE\n");
 		exit(98);
 	}
-	if (av[2] == NULL)
-	{
-		dprintf(2, "Error: Can't write to\n");
-		exit(99);
-	}
 	if (ac != 3)
 	{
 		dprintf(2, "Usage: cp file_from file_to\n");
