@@ -17,7 +17,7 @@ ssize_t cp_textfile(const char *file_from, const char *file_to)
 	char buf[1024];
 
 	fd = open(file_from, O_RDONLY);
-	x = read(fd, buf, 1000);
+	x = read(fd, buf, 10000);
 	close(fd);
 	fd1 = open(file_to, O_CREAT | O_WRONLY | O_TRUNC, 0664);
 	write(fd1, buf, x);
