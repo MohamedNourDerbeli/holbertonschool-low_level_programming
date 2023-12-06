@@ -1,7 +1,7 @@
 
 #include "main.h"
 /**
- * create_file - check the code
+ * append_text_to_file - check the code
  * @filename: char
  * @text_content: text
  * Return: Always 0.
