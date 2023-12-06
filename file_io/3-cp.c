@@ -30,7 +30,7 @@ int main(int ac, char **av)
 	if (ac != 3)
 	{
 		dprintf(2, "Usage: %s filename text\n", av[0]);
-		exit(1);
+		exit(97);
 	}
 	cp_textfile(av[1], av[2]);
 	return (0);
