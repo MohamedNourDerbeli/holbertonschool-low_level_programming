@@ -23,6 +23,12 @@ ssize_t cp_textfile(const char *file_from, const char *file_to)
 	fd1 = open(file_to, O_CREAT | O_WRONLY | O_TRUNC, 0664);
 	write(fd1, buf, x);
 	close(fd1);
+	if (!close(fd1))
+	{
+		dprintf(2, "Can't close fd");
+		exit(100);
+	}
+	
 	return (1);
 }
 int main(int ac, char **av)
