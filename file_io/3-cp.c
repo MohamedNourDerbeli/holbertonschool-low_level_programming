@@ -4,9 +4,9 @@
 #define FILE_TO_ERROR "Error: Can't write to %s\n"
 #define DESCRIPTOR_NOT_CLOSE "Error: Can't close fd %d\n"
 /**
- * read_textfile - check the code
- * @filename: char
- * @letters: size_t
+ * cp_textfile - check the code
+ * @file_from: char
+ * @file_to: size_t
  * Return: Always 0.
  */
 ssize_t cp_textfile(const char *file_from, const char *file_to)
