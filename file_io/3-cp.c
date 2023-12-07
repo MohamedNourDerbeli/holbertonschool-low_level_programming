@@ -31,7 +31,7 @@ ssize_t cp_textfile(const char *file_from, const char *file_to)
 		if (write(fd1, buf, b) != b)
 			dprintf(2, FILE_TO_ERROR, file_to), exit(99);
 	if (b == -1)
-		dprintf(1, FILE_FROM_NOT_EXIST, file_from), exit(98);
+		dprintf(2, FILE_FROM_NOT_EXIST, file_from), exit(98);
 	fd = close(fd);
 	fd1 = close(fd1);
 	if (fd == -1)
