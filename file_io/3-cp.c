@@ -28,8 +28,8 @@ ssize_t cp_textfile(const char *file_from, const char *file_to)
 	fd1 = open(file_to, O_CREAT | O_WRONLY | O_TRUNC, 0664);
 	write(fd1, buf, x);
 
-	close(fd1 && fd);
-	if (close(fd1 && fd) == -1)
+	close(fd1);
+	if (close(fd1 || fd) == -1)
 	{
 		dprintf(2, DESCRIPTOR_NOT_CLOSE , fd);
 		exit(100);
