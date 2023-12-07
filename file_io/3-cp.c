@@ -18,7 +18,7 @@
 ssize_t cp_textfile(const char *file_from, const char *file_to)
 {
 	int fd, fd1, x;
-	char *buf = malloc(1024);
+	char *buf = malloc(sizeof(file_from));
 
 	fd = open(file_from, O_RDONLY);
 	x = read(fd, buf, 1024);
