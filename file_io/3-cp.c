@@ -1,7 +1,7 @@
 #include "main.h"
 #define ARGUMENT_NOT_CORRECT "Usage: cp file_from file_to\n"
 #define FILE_FROM_NOT_EXIST "Error: Can't read from file %s\n"
-#define FILE_TO_ERROR "Error: Can't write to %s_copy\n"
+#define FILE_TO_ERROR "Error: Can't write to %s\n"
 #define DESCRIPTOR_NOT_CLOSE "Error: Can't close fd %d\n"
 /**
  * read_textfile - check the code
