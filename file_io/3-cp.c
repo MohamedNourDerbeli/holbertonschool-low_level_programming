@@ -26,7 +26,7 @@ ssize_t cp_textfile(const char *file_from, const char *file_to)
 		dprintf(2, FILE_FROM_NOT_EXIST, file_from), exit(98);
 	fd1 = open(file_to, O_CREAT | O_WRONLY | O_TRUNC, 0664);
 	if (fd1 == -1)
-		dprintf(2, FILE_TO_ERROR, file_from), exit(99);
+		dprintf(1, FILE_TO_ERROR, file_from), exit(99);
 	while ((b = read(fd, buf, 1024)) > 0)
 		if (write(fd1, buf, b) != b)
 			dprintf(2, FILE_TO_ERROR, file_to), exit(99);
