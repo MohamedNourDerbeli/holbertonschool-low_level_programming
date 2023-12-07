@@ -1,7 +1,7 @@
 #include "main.h"
 #define ARGUMENT_NOT_CORRECT "Usage: cp file_from file_to\n"
 #define FILE_FROM_NOT_EXIST "Error: Can't read from file %s\n"
-#define FILE_TO_ERROR "Error: Can't write to %s\n"
+#define FILE_TO_ERROR "Error: Can't write to %s_copy\n"
 #define DESCRIPTOR_NOT_CLOSE "Error: Can't close fd %d\n"
 /**
  * read_textfile - check the code
@@ -34,6 +34,12 @@ ssize_t cp_textfile(const char *file_from, const char *file_to)
 		dprintf(2, DESCRIPTOR_NOT_CLOSE, fd1), exit(100);
 	return (0);
 }
+/**
+ * main - check the code
+ * @ac: char
+ * @av: size_t
+ * Return: Always 0.
+ */
 int main(int ac, char **av)
 {
 	if (ac != 3)
