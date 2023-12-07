@@ -17,16 +17,16 @@
  */
 ssize_t cp_textfile(const char *file_from, const char *file_to)
 {
-	int fd, fd1;
+	int fd, fd1, x;
 	char *buf = malloc(1024);
 
 	fd = open(file_from, O_RDONLY);
-	read(fd, buf, 1024);
+	x = read(fd, buf, 1024);
 	if (fd == -1)
 		dprintf(2, FILE_FROM_NOT_EXIST, file_from), exit(98);
 
 	fd1 = open(file_to, O_CREAT | O_WRONLY | O_TRUNC, 0664);
-	write(fd1, buf, buf);
+	write(fd1, buf, x);
 
 	close(fd1);
 	if (close(fd1 || fd) == -1)
