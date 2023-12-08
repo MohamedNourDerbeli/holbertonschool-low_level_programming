@@ -9,9 +9,9 @@ hash_table_t *hash_table_create(unsigned long int size)
 	hash_table_t *hash = malloc(7 * size);
 
 	if (hash == NULL)
-		{
-			free(hash);
-			return (NULL);
-		}
+	{
+		free(hash);
+		return (NULL);
+	}
 	return (hash);
 }
