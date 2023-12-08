@@ -11,8 +11,8 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 {
 	unsigned long int res;
 	hash_node_t *node, *now_node;
-	
-	if (!key || ht)
+
+	if (!key || !ht)
 		return (0);
 	res = hash_djb2((unsigned char *)key) % ht->size;
 	node = ht->array[res];
