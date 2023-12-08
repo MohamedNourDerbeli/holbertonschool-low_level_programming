@@ -1,6 +1,6 @@
 #include "hash_tables.h"
 /**
- * hash_table_create - check the code for
+ * hash_djb2 - check the code for
  * @str: unsigned char
  * Return: Always EXIT_SUCCESS.
  */
