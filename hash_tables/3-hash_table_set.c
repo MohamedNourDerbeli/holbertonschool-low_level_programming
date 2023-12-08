@@ -10,7 +10,8 @@
 int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 {
 	unsigned long int res;
-	hash_node_t *node, *now_node;
+	hash_node_t *node;
+	hash_node_t *now_node;
 
 	if (!ht || !key || !value)
 		return (0);
@@ -28,6 +29,7 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 		}
 		node = node->next;
 	}
+	printf("pass")
 	now_node = malloc(sizeof(hash_node_t));
 	if (!now_node)
 		return (0);
