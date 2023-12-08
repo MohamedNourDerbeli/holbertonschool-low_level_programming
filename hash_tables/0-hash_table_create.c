@@ -6,11 +6,9 @@
  */
 hash_table_t *hash_table_create(unsigned long int size)
 {
-	hash_table_t *hash = malloc(size *8l);
+	hash_table_t *hash = malloc((size *8 +16));
 
 	if (hash == NULL)
 		return (NULL);
-	hash->size = size;
-	hash->array = 0;
 	return (hash);
 }
