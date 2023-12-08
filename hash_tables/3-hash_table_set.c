@@ -1,9 +1,10 @@
 #include "hash_tables.h"
 
 /**
- * key_index - check the code
- * @size: long int
+ * hash_table_set - check the code
+ * @value: long int
  * @key: char
+ * @ht: table
  * Return: Always EXIT_SUCCESS.
  */
 int hash_table_set(hash_table_t *ht, const char *key, const char *value)
