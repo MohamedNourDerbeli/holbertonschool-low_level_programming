@@ -8,6 +8,7 @@ void hash_table_print(const hash_table_t *ht)
 {
 	unsigned long int i = 0;
 	hash_node_t *node;
+	int singnal = 0;
 
 	if (!ht)
 		return;
@@ -18,10 +19,13 @@ void hash_table_print(const hash_table_t *ht)
 		node = ht->array[i];
 		while (node)
 		{
-			if (node->next == NULL)
+			if (singnal == 0)
+			{
+				singnal = 1;
 				printf("'%s': '%s'", node->key, node->value);
-			else
-				printf("'%s': '%s', ", node->key, node->value);
+			}
+			printf(", '%s': '%s'", node->key, node->value);
+
 			break;
 		}
 
