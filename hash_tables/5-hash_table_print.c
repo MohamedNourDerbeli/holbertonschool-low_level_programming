@@ -19,7 +19,7 @@ void hash_table_print(const hash_table_t *ht)
 		node = ht->array[i];
 		while (node)
 		{
-			if (node->next== NULL)
+			if (node->next == NULL)
 			{
 				if (singnal == 0)
 				{
@@ -31,10 +31,23 @@ void hash_table_print(const hash_table_t *ht)
 				break;
 			}
 			else
-				printf("collision");
-		}
+			{
+				while (node->next)
+				{
 
+					if (singnal == 0)
+					{
+						singnal = 1;
+						printf("'%s': '%s'", node->key, node->value);
+					}
+					else
+						printf(", '%s': '%s'", node->key, node->value);
+					node = node->next;
+				}
+			}
+		}
 		i++;
 	}
+
 	printf("}\n");
 }
