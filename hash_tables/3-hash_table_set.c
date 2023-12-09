@@ -1,5 +1,4 @@
 #include "hash_tables.h"
-
 /**
  * hash_table_set - check the code
  * @value: long int
@@ -17,7 +16,6 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 		return (0);
 	res = hash_djb2((unsigned char *)key) % ht->size;
 	node = ht->array[res];
-
 	while (node)
 	{
 		if (strcmp(node->key, key) == 0)
@@ -48,6 +46,5 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 	}
 	now_node->next = ht->array[res];
 	ht->array[res] = now_node;
-
 	return (1);
 }
